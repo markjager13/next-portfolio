@@ -10,6 +10,11 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background: white;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #303030;
     }
 
     html {
