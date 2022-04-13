@@ -1,11 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
-import { StyledHeader, StyledNav, NavLinks, NavLink } from './styles/Header.styled'
+import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink } from './styles/Header.styled'
 
 const Header = () => {
   return (
     <StyledHeader>
         <StyledNav>
+            <NavToggle type="checkbox" id="navToggle"/>
+            <NavToggleLabel htmlFor='navToggle'>
+                <NavIcon />
+            </NavToggleLabel>
             <NavLinks>
                 <li>
                     <Link href="/" passHref>
