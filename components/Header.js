@@ -10,7 +10,7 @@ const Header = () => {
             <NavToggleLabel htmlFor='navToggle'>
                 <NavIcon />
             </NavToggleLabel>
-            <NavLinks>
+            <NavLinks className="navLinks2">
                 <li>
                     <Link href="/" passHref>
                         <NavLink>About</NavLink>
