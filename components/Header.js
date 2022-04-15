@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
-import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink, DarkMode } from './styles/Header.styled'
+import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink } from './styles/Header.styled'
+
+
 
 const Header = () => {
+
   return (
     <StyledHeader>
         <StyledNav>
@@ -32,9 +35,6 @@ const Header = () => {
                     </Link>
                 </li>
             </NavLinks>
-            <DarkMode>
-                DM
-            </DarkMode>
         </StyledNav>
     </StyledHeader>
   )

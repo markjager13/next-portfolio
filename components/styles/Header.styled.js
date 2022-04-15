@@ -11,23 +11,16 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledNav = styled.nav`  
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
 
     @media (min-width: 48em) {
-        /*
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        */
-        display: grid;
-        grid-template-columns: 1fr 1fr 50px;
     }
 `;
 
 export const NavToggle = styled.input`
     display: none;
-    grid-column: 0;
 
     &:checked ~ ul {
         opacity: 1;
@@ -56,7 +49,6 @@ export const NavToggleLabel = styled.label`
     position: relative;
     cursor: pointer;
     display: inline-block;
-    grid-column: 1;
 
     @media (min-width: 48em) {
         display: none;
@@ -99,13 +91,11 @@ export const NavLinks = styled.ul`
     visibility: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-    grid-column: 1;
 
     @media (min-width: 48em) {
         opacity: 1;
         visibility: visible;
         max-height: none;
-        grid-column: 2 / 3;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -152,20 +142,5 @@ export const NavLink = styled.a`
             transform: scale(0, 1);
             transition: transform ease-in-out 250ms;
         }
-    }
-`;
-
-export const DarkMode = styled.div`
-    grid-column: 3;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media (min-width: 48em) {
-        grid-column: 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 `;
