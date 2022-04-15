@@ -10,16 +10,24 @@ export const StyledHeader = styled.header`
     }
 `;
 
-export const StyledNav = styled.nav`
+export const StyledNav = styled.nav`  
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+
     @media (min-width: 48em) {
+        /*
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        */
         display: grid;
-        grid-template-columns: 1fr 1fr 400px;
+        grid-template-columns: 1fr 1fr 50px;
     }
 `;
 
 export const NavToggle = styled.input`
-    opacity: 0;
-    visibility: hidden;
+    display: none;
+    grid-column: 0;
 
     &:checked ~ ul {
         opacity: 1;
@@ -47,10 +55,11 @@ export const NavToggleLabel = styled.label`
     padding: 28px 20px;
     position: relative;
     cursor: pointer;
+    display: inline-block;
+    grid-column: 1;
 
     @media (min-width: 48em) {
-        opactiy: 0;
-        visibility: hidden;
+        display: none;
     }
 `;
 
@@ -81,8 +90,6 @@ export const NavIcon = styled.span`
     }
 
     @media (min-width: 48em) {
-        opactiy: 0;
-        visibility: hidden;
         display: none;
     }
 `;
@@ -92,13 +99,13 @@ export const NavLinks = styled.ul`
     visibility: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
+    grid-column: 1;
 
     @media (min-width: 48em) {
         opacity: 1;
         visibility: visible;
         max-height: none;
-        grid-column: 3/4;
-        grid-row: 1;
+        grid-column: 2 / 3;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -107,13 +114,9 @@ export const NavLinks = styled.ul`
 `;
 
 export const NavLink = styled.a`
-    position: relative;
     display: block;
-    margin-left: 2em;
-    margin-bottom: 0;
-    font-size: 1.25rem;
+    padding: 20px;
     color: #303030;
-    cursor: pointer;
 
     &:focus {
         outline: 3px solid #303030;
@@ -129,17 +132,40 @@ export const NavLink = styled.a`
     }
 
     @media (min-width: 48em) {
+        position: relative;
+        margin-left: 2em;
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 1.25rem;
+        color: #303030;
+        cursor: pointer;
+
         &:before {
             position: absolute;
             content: '';
             display: block;
             height: 3px;
             background: black;
-            bottom: -0.25em;
+            bottom: -0.05em;
             left: 0;
             right: 0;
             transform: scale(0, 1);
             transition: transform ease-in-out 250ms;
         }
+    }
+`;
+
+export const DarkMode = styled.div`
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 48em) {
+        grid-column: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;
