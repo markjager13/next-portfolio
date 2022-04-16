@@ -1,19 +1,30 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink } from './styles/Header.styled'
+import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink, ModeToggle } from './styles/Header.styled'
+import { BiMoon } from 'react-icons/bi';
 
 
 
 const Header = () => {
 
+    const [isDarkMode, setDarkMode] = useState(false);
+
+    const handleToggle = () => {
+        setDarkMode(!isDarkMode);
+        // console.log(isDarkMode);
+     }
+
   return (
     <StyledHeader>
         <StyledNav>
+            <ModeToggle onClick={handleToggle}>
+                <BiMoon />
+            </ModeToggle>
             <NavToggle type="checkbox" id="navToggle"/>
             <NavToggleLabel htmlFor='navToggle'>
                 <NavIcon />
             </NavToggleLabel>
-            <NavLinks className="navLinks2">
+            <NavLinks id="navLinks2">
                 <li>
                     <Link href="/" passHref>
                         <NavLink>About</NavLink>

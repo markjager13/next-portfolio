@@ -4,17 +4,19 @@ export const StyledHeader = styled.header`
     width: 100%;
 
     @media (min-width: 48em) {
-        max-width: 1000px;
+        max-width: 1024px;
         padding: 1em 0;
         margin: 0 auto;
     }
 `;
 
 export const StyledNav = styled.nav`  
+    display: grid;
+    grid-template-columns: 58px 1fr 100px 58px;
 
     @media (min-width: 48em) {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
     }
 `;
@@ -46,9 +48,12 @@ export const NavToggle = styled.input`
 
 export const NavToggleLabel = styled.label`
     padding: 28px 20px;
-    position: relative;
     cursor: pointer;
-    display: inline-block;
+    grid-row: 1;
+    grid-column: 4;
+    display: flex;
+    justify-content: flex-end;
+
 
     @media (min-width: 48em) {
         display: none;
@@ -87,6 +92,9 @@ export const NavIcon = styled.span`
 `;
 
 export const NavLinks = styled.ul`
+    grid-row: 2;
+    grid-column: 3;
+
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -143,4 +151,19 @@ export const NavLink = styled.a`
             transition: transform ease-in-out 250ms;
         }
     }
+`;
+
+export const ModeToggle = styled.button`
+    grid-row: 1;
+    display: flex;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    transition: .2s all ease-in-out;
+    
+
+
 `;
