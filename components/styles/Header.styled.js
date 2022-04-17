@@ -12,11 +12,11 @@ export const StyledHeader = styled.header`
 
 export const StyledNav = styled.nav`  
     display: grid;
-    grid-template-columns: 58px 1fr 100px 58px;
+    grid-template-columns: 58px 100px 1fr 58px;
 
     @media (min-width: 48em) {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
     }
 `;
@@ -50,10 +50,7 @@ export const NavToggleLabel = styled.label`
     padding: 28px 20px;
     cursor: pointer;
     grid-row: 1;
-    grid-column: 4;
-    display: flex;
-    justify-content: flex-end;
-
+    grid-column: 1;
 
     @media (min-width: 48em) {
         display: none;
@@ -93,8 +90,7 @@ export const NavIcon = styled.span`
 
 export const NavLinks = styled.ul`
     grid-row: 2;
-    grid-column: 3;
-
+    grid-column: 2;
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -153,17 +149,47 @@ export const NavLink = styled.a`
     }
 `;
 
-export const ModeToggle = styled.button`
+export const ModeToggleButton = styled.button`
+    grid-column: -1;
     grid-row: 1;
-    display: flex;
-    padding: 1rem;
     border: none;
-    outline: none;
-    font-size: 1.5rem;
     cursor: pointer;
-    background: none;
-    transition: .2s all ease-in-out;
+    padding-top: 0.5rem;
+    padding-bottom: 0.125rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: white;
+    font-size: 1.25rem;
+    color: #303030;
+    font-family: "Source Sans Pro", sans-serif;
+    position: relative;
+    margin-left: 2em;
+
+    @media (min-width: 48em) {
+        margin-left: 2em;
+        border-radius: 45px;
+        border: 1px solid grey;
+        transition: all 0.3s ease;
+
+        &:hover {
+        border: 1px solid black;
+      
+            &:before {
+                transform: scale(1);
+                border: 3px solid black;
+            }
+        }
+
+        &:before {
+        transition: all 0.2s ease;
+        border-radius: 45px;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+    }
     
-
-
 `;
