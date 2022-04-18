@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         background: white;
         font-family: "Source Sans Pro", sans-serif;
-        font-size: 1rem;
+        font-size: 1.125rem;
         font-weight: 300;
         line-height: 1.6;
         color: #303030;
@@ -27,6 +27,30 @@ const GlobalStyles = createGlobalStyle`
 
     li{
         list-style: none;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+    
+    h2 {
+        font-size: 3.75rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
     }
 
 `;

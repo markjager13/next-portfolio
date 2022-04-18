@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
         max-width: 1024px;
         padding: 1em 0;
         margin: 0 auto;
+        margin-top: 1.5em;
     }
 `;
 
