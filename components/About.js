@@ -16,7 +16,7 @@ const About = () => {
             </p>
         </Title>
         <SubTitle>
-            Junior Software Developer
+            Front End Developer
         </SubTitle>
         <ProfileImg>
             <Image 
