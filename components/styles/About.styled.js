@@ -34,7 +34,7 @@ export const Title = styled.div`
     font-size: 3.75rem;
 
     span {
-        font-weight: 600;
+        font-weight: 900;
     }
 `;
 
