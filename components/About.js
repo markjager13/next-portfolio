@@ -20,7 +20,6 @@ const About = () => {
         </SubTitle>
         <ProfileImg>
             <Image 
-                className="about-me__img"
                 src="/profile1.jpg"
                 alt="my profile picture"
                 width={664}

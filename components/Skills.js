@@ -11,8 +11,10 @@ const Skills = () => {
             <li>HTML & CSS</li>
             <li>React</li>
             <li>Styled-Components</li>
+            <li>React Testing Library</li>
+            <li>Node & MongoDB</li>
             <li>Git & GitHub</li>
-            <li>Java & SQL</li>
+            <li>Jira</li>
         </SkillsList>
     </Section>
   )
