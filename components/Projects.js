@@ -25,16 +25,64 @@ const Projects = () => {
                 </CardImageContainer>
                 <CardContent>
                     <CardTitle>
-                        Project Title
+                        Gallery Shift Calculator
                     </CardTitle>
                     <CardSubtitle>
-                        Alias itaque praesentium
+                        A tool designed to generate a shift schedule and statistics form. 
                     </CardSubtitle>
                 </CardContent>
                 <Link href="/">
-                    <a>
-                        {"View Project >"}
-                    </a>
+                    <a><span>{"View Project >"}</span></a>
+                </Link>
+            </Card>
+            <Card>
+                <CardImageContainer>
+                    <CardImage>
+                        <Image 
+                            className="project1__img"
+                            src="/projectimage01.jpg"
+                            alt="project image"
+                            width={480}
+                            height={480}
+                            layout="responsive"
+                        />
+                    </CardImage>
+                </CardImageContainer>
+                <CardContent>
+                    <CardTitle>
+                        Project Title
+                    </CardTitle>
+                    <CardSubtitle>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </CardSubtitle>
+                </CardContent>
+                <Link href="/">
+                    <a><span>{"View Project >"}</span></a>
+                </Link>
+            </Card>
+            <Card>
+                <CardImageContainer>
+                    <CardImage>
+                        <Image 
+                            className="project1__img"
+                            src="/projectimage01.jpg"
+                            alt="project image"
+                            width={480}
+                            height={480}
+                            layout="responsive"
+                        />
+                    </CardImage>
+                </CardImageContainer>
+                <CardContent>
+                    <CardTitle>
+                        Project Title
+                    </CardTitle>
+                    <CardSubtitle>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra mi non purus. Pellentesque viverra mi non purus.
+                    </CardSubtitle>
+                </CardContent>
+                <Link href="/">
+                    <a><span>{"View Project >"}</span></a>
                 </Link>
             </Card>
         </CardGrid>

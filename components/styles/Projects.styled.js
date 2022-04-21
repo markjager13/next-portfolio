@@ -15,37 +15,47 @@ export const Title = styled.div`
 
 export const CardGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-rows: auto;
-    gap: 25px;
+    gap: 30px;
     padding-top: 30px;
 `;
 
 export const Card = styled.div`
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
-    text-align: left;
     border: 1px solid rgb(198, 198, 198);
-    border-radius: 6px;
-    padding-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
 
     a {
-        padding: 0.75em 2.5em;
-        margin: 2em;
-        cursor: pointer;
+        text-align: center;
+        font-weight: 600;
+        color: #303030;
+        align-self: bottom;
+        margin-top: auto;
+        padding: 15px;
+
+        span {
+            transition: border-bottom ease 250ms;
+
+            &:hover {
+                border-bottom: 2px solid black;
+            }
+        }
     }
 `;
 
 export const CardImageContainer = styled.div`
-    border-radius: 6px 6px 0 0;
+    border-radius: 4px 4px 0 0;
     overflow: hidden;
 `;
 
 export const CardImage = styled.div`
     width: 100%;
-    height: 150px;
+    height: 275px;
     object-fit: cover;
     display: block;
-    border-radius: 6px 6px 0 0;
+    border-radius: 4px 4px 0 0;
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 
     &:hover {
@@ -55,8 +65,7 @@ export const CardImage = styled.div`
 `;
 
 export const CardContent = styled.div`    
-    line-height: 1.5;
-    text-align: left;
+    line-height: 1.6;
     padding: 15px;
     background: #fff;
 `;
@@ -70,5 +79,6 @@ export const CardTitle = styled.p`
 `;
 
 export const CardSubtitle = styled.p`
-    font-size: 1rem;
+    text-align: left;
+    font-size: 1.125rem;
 `;
