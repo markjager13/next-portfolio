@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../components/styles/Global';
-import { Section, Title, SubTitle, TitleImage, ProjectLinkWrapper, ProjectLink, NextLink, PrevLink } from '../components/styles/ProjectItem.styled';
+import { Section, Title, SubTitle, TitleImage, ProjectLinkWrapper, NextLink, PrevLink, ContentWrapper, ContentText } from '../components/styles/ProjectItem.styled';
 import { FaChevronLeft, FaChevronRight, FaGithub, FaRegEye } from 'react-icons/fa';
 
 const project_item = () => {
@@ -19,7 +19,6 @@ const project_item = () => {
           </SubTitle>
           <TitleImage>
             <Image 
-              className="project1__img"
               src="/projectimage01.jpg"
               alt="project image"
               width={480}
@@ -37,14 +36,14 @@ const project_item = () => {
         <Link href="#" passHref>
           <a>
             <FaGithub />
-            Project GitHub
+            GitHub
           </a>
         </Link>
         <span> | </span>
         <Link href="#" passHref>
           <a>
             <FaRegEye />
-            Live Demo
+            Demo
           </a>
         </Link>
         <Link href="#" passHref>
@@ -53,6 +52,33 @@ const project_item = () => {
           </NextLink>
         </Link>
       </ProjectLinkWrapper>
+      <ContentWrapper>
+        <ContentText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </ContentText>
+        <Image 
+              src="/portfolio-details.jpg"
+              alt="project image"
+              width={931}
+              height={285}
+              layout="responsive"
+            />
+        <ContentText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </ContentText>
+        <ContentText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </ContentText>
+      </ContentWrapper>
     </>
   )
 }

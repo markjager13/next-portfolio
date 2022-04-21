@@ -66,14 +66,32 @@ export const ProjectLinkWrapper = styled.div`
         color: #303030;
         font-size: 1.5rem;
         text-decoration: none;
+
+        svg {
+            margin-bottom: -5px;
+            margin-right: 10px;
+        }
     }
 
 `;
 
-export const NextLink = styled.a`
-  margin-left: 1em;
+export const PrevLink = styled.a`
+    margin-right: 2em;
 `;
 
-export const PrevLink = styled.a`
-  margin-right: 1em;
+export const NextLink = styled.a`
+    margin-left: 2.15em;
+`;
+
+export const ContentWrapper = styled.div`
+    padding: 0 2em 2em;
+    max-width: 1024px;
+    margin: 0 auto;
+`;
+
+export const ContentText = styled.p`
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 `;
