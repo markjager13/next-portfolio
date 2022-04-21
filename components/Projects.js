@@ -5,7 +5,7 @@ import { Section, Title, CardGrid, Card, CardImage, CardContent, CardTitle, Card
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="projects">
         <Title>
             {"What I've Been Working On"}
         </Title>
@@ -28,10 +28,10 @@ const Projects = () => {
                         Gallery Shift Calculator
                     </CardTitle>
                     <CardSubtitle>
-                        A tool designed to generate a shift schedule and statistics form. 
+                        A tool designed to improve office efficiency by generating a shift schedule and statistics form. 
                     </CardSubtitle>
                 </CardContent>
-                <Link href="/">
+                <Link href="/project_item">
                     <a><span>{"View Project >"}</span></a>
                 </Link>
             </Card>

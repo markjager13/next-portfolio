@@ -3,7 +3,7 @@ import { Section, Title, SkillsList } from './styles/Skills.styled';
 
 const Skills = () => {
   return (
-    <Section>
+    <Section id="skills">
         <Title>My Skills</Title>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</p>
         <SkillsList>

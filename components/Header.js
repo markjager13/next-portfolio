@@ -27,17 +27,17 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/skills" passHref>
+                    <Link href="#skills" passHref>
                         <NavLink>Skills</NavLink>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/projects" passHref>
+                    <Link href="#projects" passHref>
                         <NavLink>Projects</NavLink>
                     </Link>            
                 </li>
                 <li>
-                    <Link href="/contact" passHref>
+                    <Link href="/" passHref>
                         <NavLink>Contact</NavLink>
                     </Link>
                 </li>
