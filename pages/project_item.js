@@ -15,7 +15,7 @@ const project_item = () => {
               Shift Calculator
           </Title>
           <SubTitle>
-            React, CSS Modules, Netlify
+            React, CSS Modules
           </SubTitle>
           <TitleImage>
             <Image 

@@ -20,10 +20,10 @@ const About = () => {
         </SubTitle>
         <ProfileImg>
             <Image 
-                src="/profile1.jpg"
+                src="/profile2.jpg"
                 alt="my profile picture"
-                width={664}
-                height={860} 
+                width={1002}
+                height={1006} 
             />
         </ProfileImg>
         <TextBody>
