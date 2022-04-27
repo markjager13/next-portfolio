@@ -6,7 +6,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/a
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
         <Title>
             <p>
                 {"Hi there, I'm "}

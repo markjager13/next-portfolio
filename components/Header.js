@@ -13,16 +13,15 @@ const Header = () => {
      }
 
   return (
-    <StyledHeader>
+    <StyledHeader id="header">
         <StyledNav>
-
             <NavToggle type="checkbox" id="navToggle"/>
             <NavToggleLabel htmlFor='navToggle'>
                 <NavIcon />
             </NavToggleLabel>
             <NavLinks>
                 <li>
-                    <Link href="/" passHref>
+                    <Link href="#about" passHref>
                         <NavLink>About</NavLink>
                     </Link>
                 </li>
@@ -37,7 +36,7 @@ const Header = () => {
                     </Link>            
                 </li>
                 <li>
-                    <Link href="/" passHref>
+                    <Link href="#contact" passHref>
                         <NavLink>Contact</NavLink>
                     </Link>
                 </li>
