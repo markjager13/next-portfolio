@@ -6,11 +6,13 @@ import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/a
 const Contact = () => {
   return (
     <Section id="contact">
-      <Title>Contact</Title>
+      <Title>Get In Touch</Title>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</p>
       <ContactEmail>
         <Link href="mailto: test@test.com" passHref>
-          <EmailLink><span>test@test.com</span></EmailLink>
+          <EmailLink>
+              <span>test@test.com</span>
+          </EmailLink>
         </Link>
       </ContactEmail>
       <ContactSocial>

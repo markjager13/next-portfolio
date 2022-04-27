@@ -6,7 +6,7 @@ import { StyledFooter } from '../components/styles/Footer.styled';
 const Footer = () => {
   return (
     <StyledFooter>
-        <p>Mark Jager</p>
+        <p>&copy; Mark Jager</p>
         <span> | </span>
         <Link href="#header">
             <a>Back to top</a>

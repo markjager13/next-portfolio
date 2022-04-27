@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.div`
     padding: 3.5em 2em;
+    padding-bottom: 8em;
     max-width: 1024px;
     margin: 0 auto;
 `;
@@ -15,15 +16,16 @@ export const ContactEmail = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
 `;
 
 export const EmailLink = styled.a`
     display: inline-block;
     font-weight: 600;
     color: #303030;
-    padding-top: 1.5em;
 
     span {
+        font-size: 1.25rem;
         width: 115px;
         height: 30px;
         transition: border-bottom ease 250ms;
@@ -75,7 +77,5 @@ export const SocialList = styled.ul`
             }
         }
     }
-
-
 `;
 
