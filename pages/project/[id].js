@@ -1,21 +1,26 @@
 import React from 'react'
+import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Image from 'next/image';
-import GlobalStyles from '../components/styles/Global';
-import { Section, Title, SubTitle, TitleImage, ProjectLinkWrapper, NextLink, PrevLink, ContentWrapper, ContentText } from '../components/styles/ProjectItem.styled';
+import GlobalStyles from '../../components/styles/Global';
+import { Section, Title, SubTitle, TitleImage, ProjectLinkWrapper, NextLink, PrevLink, ContentWrapper, ContentText } from '../../components/styles/Project.styled';
 import { FaChevronLeft, FaChevronRight, FaGithub, FaRegEye } from 'react-icons/fa';
+import { projects } from '../../constants/constants';
 
-const project_item = () => {
+const Project = () => {
+
+  const router = useRouter();
+  const { id } = router.query;
+
   return (
     <>
       <GlobalStyles />
       <Section>
           <Title>
-              Gallery <br />
-              Shift Calculator
+            {projects.at(id).itemtitle}
           </Title>
           <SubTitle>
-            React, CSS Modules
+            {projects.at(id).tags}
           </SubTitle>
           <TitleImage>
             <Image 
@@ -83,4 +88,4 @@ const project_item = () => {
   )
 }
 
-export default project_item
+export default Project
