@@ -13,7 +13,7 @@ const Skills = () => {
             <li>React</li>
             <li>Styled-Components</li>
             <li>Git</li>
-            <li>Node</li>
+            <li>Node.js</li>
             <li>Express</li>
         </SkillsList>
     </Section>

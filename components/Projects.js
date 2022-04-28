@@ -6,13 +6,14 @@ import { projects } from '../constants/constants';
 
 const Projects = () => {
 
-    const ROUTE_PROJECT_ID = "project/[id]";
+    const ROUTE_PROJECT_ID = "/project/[id]";
 
   return (
     <Section id="projects">
         <Title>
             {"What I've Been Working On"}
         </Title>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</p>
         <CardGrid>
         {projects.map(project => (
             <Card key={`project-${project.id}`}>
@@ -41,89 +42,8 @@ const Projects = () => {
                 }}>
                     <a><span>{"View Project >"}</span></a>
                 </Link>
-        </Card>            
+            </Card>            
         ))}
-        
-        
-        
-        
-        {/* 
-            <Card>
-                <CardImageContainer>
-                    <CardImage>
-                        <Image 
-                            className="project1__img"
-                            src={projects.at(0).image}
-                            alt="project image"
-                            width={480}
-                            height={480}
-                            layout="responsive"
-                        />
-                    </CardImage>
-                </CardImageContainer>
-                <CardContent>
-                    <CardTitle>
-                        {projects.at(0).title}
-                    </CardTitle>
-                    <CardSubtitle>
-                        {projects.at(0).description}
-                    </CardSubtitle>
-                </CardContent>
-                <Link href={'/project/' + projects.id} key={projects.id}>
-                    <a><span>{"View Project >"}</span></a>
-                </Link>
-            </Card>
-            <Card>
-                <CardImageContainer>
-                    <CardImage>
-                        <Image 
-                            className="project2__img"
-                            src={projects.at(1).image}
-                            alt="project image"
-                            width={480}
-                            height={480}
-                            layout="responsive"
-                        />
-                    </CardImage>
-                </CardImageContainer>
-                <CardContent>
-                    <CardTitle>
-                        {projects.at(1).title}
-                    </CardTitle>
-                    <CardSubtitle>
-                        {projects.at(1).description}
-                    </CardSubtitle>
-                </CardContent>
-                <Link href="/">
-                    <a><span>{"View Project >"}</span></a>
-                </Link>
-            </Card>
-            <Card>
-                <CardImageContainer>
-                    <CardImage>
-                        <Image 
-                            className="project3__img"
-                            src={projects.at(2).image}
-                            alt="project image"
-                            width={480}
-                            height={480}
-                            layout="responsive"
-                        />
-                    </CardImage>
-                </CardImageContainer>
-                <CardContent>
-                    <CardTitle>
-                        {projects.at(2).title}
-                    </CardTitle>
-                    <CardSubtitle>
-                        {projects.at(2).description}
-                    </CardSubtitle>
-                </CardContent>
-                <Link href="/">
-                    <a><span>{"View Project >"}</span></a>
-                </Link>
-            </Card>
-        */}
         </CardGrid>
     </Section>
   )

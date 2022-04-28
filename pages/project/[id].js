@@ -10,6 +10,7 @@ const Project = () => {
 
   const router = useRouter();
   const { id } = router.query;
+  const stack = projects.at(id).tags;
 
   return (
     <>
@@ -26,20 +27,23 @@ const Project = () => {
             commodo consequat.
           </ContentText>
           <ContentTable>
-            <tbody>
+            <thead>
               <tr>
                 <th>Stack</th>
                 <th>Code</th>
                 <th>Demo</th>
               </tr>
-              <tr>
-                <td>{projects.at(id).tags[0]}</td>
-                <td><Link href={projects.at(id).source} passHref><ExternalLink>Repository</ExternalLink></Link></td>
-                <td><Link href={projects.at(id).visit} passHref><ExternalLink>View Site</ExternalLink></Link></td>
-              </tr>
-              <tr>
-                <td>{projects.at(id).tags[1]}</td>
-              </tr>
+            </thead>
+            <tbody>
+              {stack.map((stackItem, index) => {
+                return(
+                  <tr key={index}>
+                    <td>{stackItem}</td>
+                    <td>{index === 0 ? <Link href={projects.at(id).source} passHref><ExternalLink>Repository</ExternalLink></Link> : ""}</td>
+                    <td>{index === 0 ? <Link href={projects.at(id).visit} passHref><ExternalLink>View Site</ExternalLink></Link> : ""}</td>
+                  </tr>
+                )
+              })}
             </tbody>
           </ContentTable>
           <Image 
