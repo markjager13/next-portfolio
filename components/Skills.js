@@ -7,7 +7,7 @@ const Skills = () => {
         <Title>My Skills</Title>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</p>
         <SkillsList>
-            <li>JavaScript ES6</li>
+            <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>React</li>
