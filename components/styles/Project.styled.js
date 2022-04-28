@@ -2,96 +2,58 @@ import styled from 'styled-components';
 
 export const Section = styled.div`
     padding: 3.5em 2em;
-
-    max-width: 1024px;
+    max-width: 1000px;
     margin: 0 auto;
 
-    position: relative;
-
-    @media (min-width: 600px) {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas:
-          "img title"
-          "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-
+    display: flex;
+    flex-direction: column;    
 `;
 
-export const Title = styled.h1`
-    margin-bottom: 0.25em;
+export const Title = styled.h2`
     font-weight: 300;
+    padding-left: 0.5em;
 
     strong {
         display: block;
     }
-
-`;
-
-export const SubTitle = styled.p`
-    margin: 0;
-    font-size: 1.25rem;
-
-    background: #d7f6f6;
-    padding: 0.25em 1em;
-    font-family: sans-serif;
-    margin-bottom: 1em;
-
-    align-self: start;
-    grid-column: -1 / 1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
-`;
-
-export const TitleImage = styled.div`
-    grid-area: img;
-    min-width: 250px;
-    position: relative;
-    z-index: 2;
-`;
-
-export const ProjectLinkWrapper = styled.div`
-    text-align: center;
-    padding-bottom: 26px;
-
-    a {
-        padding: 0 1em;
-        display: inline-block;
-        color: #303030;
-        font-size: 1.5rem;
-        text-decoration: none;
-
-        svg {
-            margin-bottom: -5px;
-            margin-right: 10px;
-        }
-    }
-
-`;
-
-export const PrevLink = styled.a`
-    margin-right: 2em;
-`;
-
-export const NextLink = styled.a`
-    margin-left: 2.15em;
 `;
 
 export const ContentWrapper = styled.div`
     padding: 0 2em 2em;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 1em auto;
 `;
 
+export const ContentDetails = styled.table`
+    display: table;
+    border-collapse: separate;
+    text-align: left;
+    margin-bottom: 3em;
+    width: 100%;
+
+    th {
+        font-weight: 900;
+        padding-bottom: 15px;
+    }
+
+    td {
+        width: 200px;
+    }
+`;
+
+export const ExternalLink = styled.a`
+    font-weight: 600;
+    color: red;
+    align-self: bottom;
+    margin-top: auto;
+    transition: border-bottom ease 250ms;
+
+        &:hover {
+            border-bottom: 2px solid black;
+        }
+`;
+    
 export const ContentText = styled.p`
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
+    max-width: 1000px;
+    margin: 1em auto;
 `;
