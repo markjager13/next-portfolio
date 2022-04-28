@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../../components/styles/Global';
-import { Section, Title, ContentWrapper, ContentDetails, ExternalLink, ContentText } from '../../components/styles/Project.styled';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from '../../components/styles/Project.styled';
 import { projects } from '../../constants/constants';
 
 const Project = () => {
@@ -25,7 +25,7 @@ const Project = () => {
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat.
           </ContentText>
-          <ContentDetails>
+          <ContentTable>
             <tbody>
               <tr>
                 <th>Stack</th>
@@ -41,7 +41,7 @@ const Project = () => {
                 <td>{projects.at(id).tags[1]}</td>
               </tr>
             </tbody>
-          </ContentDetails>
+          </ContentTable>
           <Image 
                 src="/portfolio-details.jpg"
                 alt="project image"

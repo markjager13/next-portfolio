@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div`
     margin: 1em auto;
 `;
 
-export const ContentDetails = styled.table`
+export const ContentTable = styled.table`
     display: table;
     border-collapse: separate;
     text-align: left;
