@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, Title, SkillsList } from '../styles/Skills.styled';
+import { Section, Title, SkillsList } from './Skills.styled';
 
 const Skills = () => {
   return (

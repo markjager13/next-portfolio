@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
-import { Section, Title, ContactEmail, EmailLink, ContactSocial, SocialList } from '../styles/Contact.styled';
+import { Section, Title, ContactEmail, EmailLink, ContactSocial, SocialList } from './Contact.styled';
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 
 const Contact = () => {

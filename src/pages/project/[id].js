@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../../styles/Global';
-import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from '../../styles/Project.styled';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from './Project.styled';
 import { projects } from '../../constants/constants';
 
 const Project = () => {
