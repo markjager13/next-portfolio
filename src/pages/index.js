@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import GlobalStyles from '../components/styles/Global';
+import GlobalStyles from '../styles/Global';
 import Header from '../components/Header';
 import About from '../components/About';
 import Skills from '../components/Skills';

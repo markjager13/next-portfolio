@@ -2,8 +2,8 @@ import React from 'react'
 import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Image from 'next/image';
-import GlobalStyles from '../../components/styles/Global';
-import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from '../../components/styles/Project.styled';
+import GlobalStyles from '../../styles/Global';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from '../../styles/Project.styled';
 import { projects } from '../../constants/constants';
 
 const Project = () => {
@@ -47,7 +47,7 @@ const Project = () => {
             </tbody>
           </ContentTable>
           <Image 
-                src="/portfolio-details.jpg"
+                src="/images/portfolio-details.jpg"
                 alt="project image"
                 width={931}
                 height={285}

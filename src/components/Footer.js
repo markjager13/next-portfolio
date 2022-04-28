@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { StyledFooter } from '../components/styles/Footer.styled';
+import { StyledFooter } from '../styles/Footer.styled';
 
 const Footer = () => {
   return (
