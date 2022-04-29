@@ -1,22 +1,18 @@
-import Head from 'next/head';
-import GlobalStyles from '../styles/Global';
-import Header from '../components/Header/Header';
+import GlobalStyles from '../styles/globals';
 import About from '../components/About/About';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
-import Footer from '../components/Footer/Footer';
+import { Layout } from '../layout/Layout';
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <GlobalStyles />
-      <Header />
       <About />
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
-    </>
+    </Layout>
   )
 }

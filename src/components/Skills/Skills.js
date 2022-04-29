@@ -1,11 +1,12 @@
 import React from 'react'
-import { Section, Title, SkillsList } from './Skills.styled';
+import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents/index';
+import { SkillsList } from './Skills.styled';
 
 const Skills = () => {
   return (
     <Section id="skills">
-        <Title>My Skills</Title>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</p>
+        <SectionTitle>My Skills</SectionTitle>
+        <SectionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</SectionText>
         <SkillsList>
             <li>JavaScript</li>
             <li>HTML</li>

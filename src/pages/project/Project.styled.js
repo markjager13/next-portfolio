@@ -9,13 +9,8 @@ export const Section = styled.div`
     flex-direction: column;    
 `;
 
-export const Title = styled.h2`
-    font-weight: 300;
+export const Title = styled.h1`
     padding-left: 0.5em;
-
-    strong {
-        display: block;
-    }
 `;
 
 export const ContentWrapper = styled.div`

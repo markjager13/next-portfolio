@@ -1,23 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Section, Title, SubTitle, ProfileImg, TextBody, SocialList } from './About.styled'
+import { SectionText } from '../../styles/GlobalComponents';
+import { AboutSection, AboutTitle, AboutSubTitle, ProfileImg, SocialList } from './About.styled'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 
 const About = () => {
   return (
-    <Section id="about">
-        <Title>
-            <p>
-                {"Hi there, I'm "}
-                <span>
-                    {"Mark"}
-                </span>
-            </p>
-        </Title>
-        <SubTitle>
+    <AboutSection id="about">
+        <AboutTitle>
+            {"Hi there, I'm "}
+            <span>
+                {"Mark"}
+            </span>
+        </AboutTitle>
+        <AboutSubTitle>
             Front End Developer
-        </SubTitle>
+        </AboutSubTitle>
         <ProfileImg>
             <Image 
                 src="/images/profile2.jpg"
@@ -26,17 +25,11 @@ const About = () => {
                 height={1006} 
             />
         </ProfileImg>
-        <TextBody>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non dignissim neque. In pretium nisl.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
-            </p>
-        </TextBody>
+        <SectionText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non dignissim neque. In pretium nisl.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
+        </SectionText>
         <SocialList>
             <li>
                 <Link href="https://www.linkedin.com/" passHref>
@@ -61,7 +54,7 @@ const About = () => {
             </li>
 
         </SocialList>
-    </Section>
+    </AboutSection>
   )
 }
 

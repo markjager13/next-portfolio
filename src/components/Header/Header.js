@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink, ModeToggleButton } from './Header.styled'
-import { RiMoonClearLine, RiSunLine } from 'react-icons/ri';
+import { RiMoonClearLine } from 'react-icons/ri';
 
 const Header = () => {
 
@@ -21,22 +21,22 @@ const Header = () => {
             </NavToggleLabel>
             <NavLinks>
                 <li>
-                    <Link href="#about" passHref>
-                        <NavLink>About</NavLink>
+                    <Link href="/#top" passHref>
+                        <NavLink>Home</NavLink>
                     </Link>
                 </li>
                 <li>
-                    <Link href="#skills" passHref>
+                    <Link href="/#skills" passHref>
                         <NavLink>Skills</NavLink>
                     </Link>
                 </li>
                 <li>
-                    <Link href="#projects" passHref>
+                    <Link href="/#projects" passHref>
                         <NavLink>Projects</NavLink>
                     </Link>            
                 </li>
                 <li>
-                    <Link href="#contact" passHref>
+                    <Link href="/#contact" passHref>
                         <NavLink>Contact</NavLink>
                     </Link>
                 </li>

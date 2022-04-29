@@ -8,7 +8,7 @@ const Footer = () => {
     <StyledFooter>
         <p>&copy; Mark Jager</p>
         <span> | </span>
-        <Link href="#header">
+        <Link href="#top">
             <a>Back to top</a>
         </Link>
   </StyledFooter>

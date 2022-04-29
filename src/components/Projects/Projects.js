@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Section, Title, CardGrid, Card, CardImage, CardContent, CardTitle, CardSubtitle, CardImageContainer } from './Projects.styled';
+import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents/index';
+import { CardGrid, Card, CardImage, CardContent, CardTitle, CardSubtitle, CardImageContainer } from './Projects.styled';
 import { projects } from '../../constants/constants';
 
 const Projects = () => {
@@ -10,10 +11,10 @@ const Projects = () => {
 
   return (
     <Section id="projects">
-        <Title>
+        <SectionTitle>
             {"What I've Been Working On"}
-        </Title>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</p>
+        </SectionTitle>
+        <SectionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</SectionText>
         <CardGrid>
         {projects.map(project => (
             <Card key={`project-${project.id}`}>

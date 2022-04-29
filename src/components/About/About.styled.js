@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-export const Section = styled.div`
+export const AboutSection = styled.div`
     padding: 3.5em 2em;
-
     max-width: 1024px;
     margin: 0 auto;
     padding-top: 3em;
@@ -16,32 +15,16 @@ export const Section = styled.div`
     grid-column-gap: 2em;
 `;
 
-export const ProfileImg = styled.div`
-    grid-area: img;
-    position: relative;
-    z-index: 2;
-    width: 100%;
-
-    img {
-        border-radius: 4px;
-    }
-
-`;
-
-export const Title = styled.div`
+export const AboutTitle = styled.h1`
     margin-bottom: 0.25em;
     grid-area: title;
-    font-size: 3.75rem;
 
     span {
         font-weight: 900;
     }
 `;
 
-export const SubTitle = styled.p`
-
-    font-size: 1.5rem;
-
+export const AboutSubTitle = styled.h3`
     background: #d7f6f6;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
@@ -57,8 +40,16 @@ export const SubTitle = styled.p`
     padding-right: calc(200px + 4em);
 `;
 
-export const TextBody = styled.div`
-    
+export const ProfileImg = styled.div`
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    img {
+        border-radius: 4px;
+    }
+
 `;
 
 export const SocialList = styled.ul`

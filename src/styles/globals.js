@@ -39,14 +39,15 @@ const GlobalStyles = createGlobalStyle`
     h3 {
         line-height: 1;
         margin: 0;
+        font-weight: 300;
     }
 
     h1 {
-        font-size: 4.5rem;
+        font-size: 3.75rem;
     }
     
     h2 {
-        font-size: 3.75rem;
+        font-size: 2.5rem;
     }
     
     h3 {

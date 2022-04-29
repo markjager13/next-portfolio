@@ -2,9 +2,10 @@ import React from 'react'
 import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Image from 'next/image';
-import GlobalStyles from '../../styles/Global';
+import GlobalStyles from '../../styles/globals';
 import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from './Project.styled';
 import { projects } from '../../constants/constants';
+import { Layout } from '../../layout/Layout';
 
 const Project = () => {
 
@@ -13,7 +14,7 @@ const Project = () => {
   const stack = projects.at(id).tags;
 
   return (
-    <>
+    <Layout>
       <GlobalStyles />
       <Section>
         <Title>
@@ -67,7 +68,7 @@ const Project = () => {
           </ContentText>
         </ContentWrapper>
       </Section>
-    </>
+    </Layout>
   )
 }
 
