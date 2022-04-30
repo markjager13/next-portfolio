@@ -1,18 +1,24 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.div`
-    padding: 3.5em 2em;
     max-width: 1024px;
     margin: 0 auto;
-    padding-top: 3em;
+    padding: 3.5em 2em;
 
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
+    @media (min-width: 48em) {
+        padding: 3.5em 2em;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-top: 3em;
+
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+        grid-column-gap: 2em;
+    }
 `;
 
 export const AboutTitle = styled.h1`
@@ -62,7 +68,7 @@ export const AboutSubTitle = styled.h3`
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fadeIn ease 1.25s;
-    animation-delay: 400ms;
+    animation-delay: 300ms;
     animation-fill-mode: forwards;
 
 
@@ -77,21 +83,55 @@ export const AboutSubTitle = styled.h3`
 `;
 
 export const ProfileImg = styled.div`
-    grid-area: img;
-    position: relative;
-    z-index: 2;
-    width: 100%;
+    box-shadow: var(--bs);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 
-    img {
-        border-radius: 4px;
+    @media (min-width: 48em) {
+
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+
+        img {
+            border-radius: 4px;
+        }
+
+        opacity: 0;
+        animation-duration: 0.6s;
+        animation-timing-function: ease-in; 
+        animation: fadeIn ease 1.25s;
+        animation-delay: 200ms;
+        animation-fill-mode: forwards;
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
+`;
+
+export const AboutText = styled.p`
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #303030;
 
     opacity: 0;
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fadeIn ease 1.25s;
-    animation-delay: 500ms;
+    animation-delay: 300ms;
     animation-fill-mode: forwards;
+
 
     @keyframes fadeIn {
         0% {
@@ -110,6 +150,22 @@ export const SocialList = styled.ul`
     justify-content: left;
     margin: 1em 0 0;
     padding: 0;
+
+    opacity: 0;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in; 
+    animation: fadeIn ease 1.25s;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
     li {
         text-decoration: none;

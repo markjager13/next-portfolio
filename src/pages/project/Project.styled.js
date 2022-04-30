@@ -6,11 +6,50 @@ export const Section = styled.div`
     margin: 0 auto;
 
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+
+    opacity: 0;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in; 
+    animation: fadeIn ease 1.25s;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 `;
 
 export const Title = styled.h1`
     padding-left: 0.5em;
+
+    opacity: 0;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in; 
+    animation: fromBottom ease 1.25s;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+
+    span {
+        font-weight: 900;
+    }
+
+    @keyframes fromBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 `;
 
 export const ContentWrapper = styled.div`
@@ -44,7 +83,7 @@ export const ExternalLink = styled.a`
     transition: border-bottom ease 250ms;
 
         &:hover {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid red;
         }
 `;
     

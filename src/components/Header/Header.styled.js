@@ -8,6 +8,22 @@ export const StyledHeader = styled.header`
         padding: 1em 0;
         margin: 0 auto;
         margin-top: 1.5em;
+
+        opacity: 0;
+        animation-duration: 0.6s;
+        animation-timing-function: ease-in; 
+        animation: fadeIn ease 1.25s;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 `;
 

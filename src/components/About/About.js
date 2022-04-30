@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { SectionText } from '../../styles/GlobalComponents';
-import { AboutSection, AboutTitle, AboutSubTitle, ProfileImg, SocialList } from './About.styled'
+import { AboutSection, AboutTitle, AboutSubTitle, ProfileImg, AboutText, SocialList } from './About.styled'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 
 const About = () => {
@@ -25,11 +24,11 @@ const About = () => {
                 height={1006} 
             />
         </ProfileImg>
-        <SectionText>
+        <AboutText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non dignissim neque. In pretium nisl.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
-        </SectionText>
+        </AboutText>
         <SocialList>
             <li>
                 <Link href="https://www.linkedin.com/" passHref>

@@ -54,6 +54,8 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.5rem;
     }
 
+    
+
 `;
 
 export default GlobalStyles;
