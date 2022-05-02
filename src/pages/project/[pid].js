@@ -1,11 +1,10 @@
 import fs from 'fs/promises';
 import path from 'path';
-
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../../styles/globals';
-import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from './Project.styled';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from './ProjectDetailsPage.styled';
 import { Layout } from '../../layout/Layout';
 
 const ProjectDetailsPage = (props) => {
@@ -39,11 +38,13 @@ const ProjectDetailsPage = (props) => {
               </tr>
             </thead>
             <tbody>
-              <tr key={loadedProject.id}>
-                <td>{loadedProject.stack}</td>
-                <td>{loadedProject.id === 0 ? <Link href={loadedProject.github} passHref><ExternalLink>Repository</ExternalLink></Link> : ""}</td>
-                <td>{loadedProject.id === 0 ? <Link href={loadedProject.demo} passHref><ExternalLink>View Site</ExternalLink></Link> : ""}</td>
-              </tr>
+              {loadedProject.stack.map((stackItem, index) => (
+                <tr key={index}>
+                  <td>{stackItem}</td>
+                  <td>{index === 0 ? <Link href={loadedProject.github} passHref><ExternalLink>Repository</ExternalLink></Link> : ""}</td>
+                  <td>{index === 0 ? <Link href={loadedProject.demo} passHref><ExternalLink>View Site</ExternalLink></Link> : ""}</td>
+                </tr>
+              ))}
             </tbody>
           </ContentTable>
           <Image 

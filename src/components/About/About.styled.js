@@ -89,12 +89,15 @@ export const AboutSubTitle = styled.h3`
 `;
 
 export const ProfileImg = styled.div`
-    box-shadow: var(--bs);
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.5em;
     width: 50%;
+
+    img {
+        border-radius: 4px;
+    }
 
     @media (min-width: 48em) {
 
@@ -102,10 +105,6 @@ export const ProfileImg = styled.div`
         position: relative;
         z-index: 2;
         width: 100%;
-
-        img {
-            border-radius: 4px;
-        }
 
         opacity: 0;
         animation-duration: 0.6s;

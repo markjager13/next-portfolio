@@ -27,8 +27,8 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h1`
-    padding-left: 0.5em;
-
+    text-align: center;
+    
     opacity: 0;
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
@@ -50,10 +50,15 @@ export const Title = styled.h1`
             transform: translateY(0);
         }
     }
+
+    @media (min-width: 760px) {
+        text-align: left;
+        padding-left: 0.5em;
+    }
 `;
 
 export const ContentWrapper = styled.div`
-    padding: 0 2em 2em;
+    padding: 0 1em;
     max-width: 1024px;
     margin: 1em auto;
 `;
@@ -88,6 +93,6 @@ export const ExternalLink = styled.a`
 `;
     
 export const ContentText = styled.p`
-    max-width: 1000px;
+    max-width: 1024px;
     margin: 1em auto;
 `;

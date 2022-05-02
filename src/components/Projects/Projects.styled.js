@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-auto-rows: auto;
     gap: 30px;
     padding-top: 30px;

@@ -7,8 +7,6 @@ import { CardGrid, Card, CardImage, CardContent, CardTitle, CardSubtitle, CardIm
 
 const Projects = ( {projects} ) => {
 
-    //const ROUTE_PROJECT_ID = "/project/[id]";
-
   return (
     <Section id="projects">
         <SectionTitle>
@@ -37,11 +35,7 @@ const Projects = ( {projects} ) => {
                         {project.description}
                     </CardSubtitle>
                 </CardContent>
-                <Link href={
-                    `/project/${project.id}`
-                    //pathname: ROUTE_PROJECT_ID,
-                    //query: { id: project.id }
-                }>
+                <Link href={`/project/${project.id}`}>
                     <a><span>{"View Project >"}</span></a>
                 </Link>
             </Card>            
