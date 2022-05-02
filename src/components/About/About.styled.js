@@ -51,18 +51,8 @@ export const AboutTitle = styled.h1`
 
 export const AboutSubTitle = styled.h3`
     background: #d7f6f6;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    font-family: sans-serif;
+    padding: 0.25em 1em;
     margin-bottom: 1em;
-
-    grid-column: 1 / -1;
-    grid-row: 2;
-    position: relative;
-    left: -1em;
-    width: calc(100% + 2em);
-    padding-left: 1em;
-    padding-right: calc(200px + 4em);
 
     opacity: 0;
     animation-duration: 0.6s;
@@ -70,7 +60,6 @@ export const AboutSubTitle = styled.h3`
     animation: fadeIn ease 1.25s;
     animation-delay: 300ms;
     animation-fill-mode: forwards;
-
 
     @keyframes fadeIn {
         0% {
@@ -80,6 +69,23 @@ export const AboutSubTitle = styled.h3`
             opacity: 1;
         }
     }
+
+    @media (min-width: 48em) {
+        background: #d7f6f6;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        font-family: sans-serif;
+        margin-bottom: 1em;
+
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+
 `;
 
 export const ProfileImg = styled.div`
@@ -87,6 +93,7 @@ export const ProfileImg = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0.5em;
     width: 50%;
 
     @media (min-width: 48em) {
@@ -120,7 +127,7 @@ export const ProfileImg = styled.div`
 
 export const AboutText = styled.p`
     font-family: "Source Sans Pro",sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
     color: #303030;
@@ -140,6 +147,10 @@ export const AboutText = styled.p`
         100% {
             opacity: 1;
         }
+    }
+
+    @media (min-width: 48em) {
+        font-size: 1.125rem;
     }
 
 `;

@@ -29,8 +29,12 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
     font-family: "Source Sans Pro",sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
     color: #303030;
+
+    @media (min-width: 48em) {
+        font-size: 1.125rem;
+    }
 `;

@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents/index';
 import { CardGrid, Card, CardImage, CardContent, CardTitle, CardSubtitle, CardImageContainer } from './Projects.styled';
-import { projects } from '../../constants/constants';
 
-const Projects = () => {
+const Projects = ( {projects} ) => {
 
-    const ROUTE_PROJECT_ID = "/project/[id]";
+    //const ROUTE_PROJECT_ID = "/project/[id]";
 
   return (
     <Section id="projects">
@@ -17,7 +17,7 @@ const Projects = () => {
         <SectionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</SectionText>
         <CardGrid>
         {projects.map(project => (
-            <Card key={`project-${project.id}`}>
+            <Card key={project.id}>
                 <CardImageContainer>
                     <CardImage>
                         <Image 
@@ -37,10 +37,11 @@ const Projects = () => {
                         {project.description}
                     </CardSubtitle>
                 </CardContent>
-                <Link href={{
-                    pathname: ROUTE_PROJECT_ID,
-                    query: { id: project.id }
-                }}>
+                <Link href={
+                    `/project/${project.id}`
+                    //pathname: ROUTE_PROJECT_ID,
+                    //query: { id: project.id }
+                }>
                     <a><span>{"View Project >"}</span></a>
                 </Link>
             </Card>            
