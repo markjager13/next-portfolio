@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
         max-width: 1024px;
         padding: 1em 0;
         margin: 0 auto;
-        margin-top: 1.5em;
+        margin-top: 2em;
 
         opacity: 0;
         animation-duration: 0.6s;
@@ -29,7 +29,7 @@ export const StyledHeader = styled.header`
 
 export const StyledNav = styled.nav`  
     display: grid;
-    grid-template-columns: 58px 100px 1fr 58px;
+    grid-template-columns: 80px 100px 1fr 80px;
 
     @media (min-width: 48em) {
         display: flex;
@@ -44,7 +44,7 @@ export const NavToggle = styled.input`
     &:checked ~ ul {
         opacity: 1;
         visibility: visible;
-        max-height: 240px;
+        max-height: 330px;
     }
 
     &:checked ~ label span {
@@ -64,7 +64,7 @@ export const NavToggle = styled.input`
 `;
 
 export const NavToggleLabel = styled.label`
-    padding: 28px 20px;
+    padding: 38px 30px;
     cursor: pointer;
     grid-row: 1;
     grid-column: 1;
@@ -173,21 +173,21 @@ export const ModeToggleButton = styled.button`
     cursor: pointer;
     padding-top: 0.5rem;
     padding-bottom: 0.125rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background: white;
     font-size: 1.25rem;
     color: #303030;
     font-family: "Source Sans Pro", sans-serif;
     position: relative;
-    margin-left: 2em;
 
+        /*
     @media (min-width: 48em) {
-        margin-left: 2em;
         border-radius: 45px;
         border: 1px solid grey;
         transition: all 0.3s ease;
 
+        
         &:hover {
         border: 1px solid black;
       
@@ -207,6 +207,8 @@ export const ModeToggleButton = styled.button`
         right: 0;
         top: 0;
         }
+        
     }
-    
+    */
+
 `;

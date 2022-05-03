@@ -9,7 +9,7 @@ export const Section = styled.section`
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fadeIn ease 1.25s;
-    animation-delay: 2300ms;
+    animation-delay: 1000ms;
     animation-fill-mode: forwards;
 
 

@@ -24,7 +24,7 @@ export const AboutSection = styled.div`
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fadeIn ease 1.25s;
-    animation-delay: 2300ms;
+    animation-delay: 1000ms;
     animation-fill-mode: forwards;
 
 
@@ -135,7 +135,7 @@ export const AboutText = styled.p`
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fadeIn ease 1.25s;
-    animation-delay: 300ms;
+    animation-delay: 1000ms;
     animation-fill-mode: forwards;
 
 
@@ -165,7 +165,7 @@ export const SocialList = styled.ul`
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fadeIn ease 1.25s;
-    animation-delay: 300ms;
+    animation-delay: 1000ms;
     animation-fill-mode: forwards;
 
     @keyframes fadeIn {

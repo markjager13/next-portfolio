@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const HeroSection = styled.div`
     max-width: 1024px;
     margin: 0 auto;
-    padding: 8.5em 2em;
+    padding: 9em 2em;
+    padding-top: 12em;
 
     @media (min-width: 48em) {
-        padding: 8.5em 2em;
+        padding: 9em 2em;
         max-width: 1024px;
         margin: 0 auto;
-        padding-top: 8.5em;
+        padding-top: 9em;
 
         display: grid;
         grid-template-columns: 1fr;
@@ -29,7 +30,7 @@ export const HeroTitle = styled.h1`
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fromBottom ease 1.25s;
-    animation-delay: 800ms;
+    animation-delay: 300ms;
     animation-fill-mode: forwards;
 
     span {
@@ -58,7 +59,7 @@ export const HeroSubTitle = styled.div`
     opacity: 0;
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
-    animation: fromRight ease 1s;
+    animation: fromRight ease 0.65s;
     animation-delay: 0;
     animation-fill-mode: forwards;
 
@@ -95,7 +96,7 @@ export const HeroSubTitle = styled.div`
         animation-duration: 0.6s;
         animation-timing-function: ease-in; 
         animation: fromBottom ease 1.25s;
-        animation-delay: 1000ms;
+        animation-delay: 400ms;
         animation-fill-mode: forwards;
 
         @keyframes fromBottom {
@@ -123,7 +124,7 @@ export const HeroText = styled.p`
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
     animation: fromBottom ease 1.25s;
-    animation-delay: 1400ms;
+    animation-delay: 500ms;
     animation-fill-mode: forwards;
 
 
@@ -159,7 +160,7 @@ export const SocialList = styled.ul`
         animation-duration: 0.6s;
         animation-timing-function: ease-in; 
         animation: fadeIn ease 1.25s;
-        animation-delay: 300ms;
+        animation-delay: 0;
         animation-fill-mode: forwards;
 
 
@@ -173,15 +174,15 @@ export const SocialList = styled.ul`
     }
 
         &:nth-child(1) {
-            animation-delay: 2000ms;
+            animation-delay: 600ms;
         }
 
         &:nth-child(2) {
-            animation-delay: 2200ms;
+            animation-delay: 800ms;
         }
 
         &:nth-child(3) {
-            animation-delay: 2300ms;    
+            animation-delay: 1000ms;    
         }
 
         a {
