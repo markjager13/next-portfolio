@@ -120,6 +120,7 @@ export const NavLinks = styled.ul`
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        padding-right: 0.5em;
     }
 
 `;
@@ -180,6 +181,11 @@ export const ModeToggleButton = styled.button`
     color: #303030;
     font-family: "Source Sans Pro", sans-serif;
     position: relative;
+
+    &:focus {
+        outline: 3px solid #303030;
+        outline-offset: 3px;
+    }
 
         /*
     @media (min-width: 48em) {

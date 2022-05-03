@@ -163,6 +163,13 @@ export const SocialList = styled.ul`
         animation-delay: 0;
         animation-fill-mode: forwards;
 
+        a {
+            &:focus {
+                outline: 3px solid #303030;
+                outline-offset: 3px;
+            }
+        }
+
 
     @keyframes fadeIn {
         0% {

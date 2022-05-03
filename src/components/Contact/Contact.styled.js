@@ -12,6 +12,11 @@ export const EmailLink = styled.a`
     font-weight: 600;
     color: #303030;
 
+    &:focus {
+        outline: 3px solid #303030;
+        outline-offset: 3px;
+    }
+
     span {
         font-size: 1.25rem;
         width: 115px;
@@ -47,6 +52,11 @@ export const SocialList = styled.ul`
             color: grey;
             opacity: 1;
             transition-duration: 0.2s; 
+
+            &:focus {
+                outline: 3px solid #303030;
+                outline-offset: 3px;
+           }
         }
 
         &:hover:nth-child(1) {

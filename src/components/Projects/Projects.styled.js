@@ -22,6 +22,11 @@ export const Card = styled.div`
         margin-top: auto;
         padding: 15px;
 
+        &:focus {
+            outline: 3px solid #303030;
+            outline-offset: 3px;
+        }
+
         span {
             transition: border-bottom ease 250ms;
 

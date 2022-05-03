@@ -31,6 +31,11 @@ export const StyledFooter = styled.div`
     
     a {
         cursor: pointer;
+
+        &:focus {
+            outline: 3px solid #303030;
+            outline-offset: 3px;
+        }
     }
 `;
 
