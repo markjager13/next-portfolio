@@ -17,6 +17,7 @@ const Projects = ( {projects} ) => {
         {projects.map(project => (
             <Card key={project.id}>
                 <CardImageContainer>
+                    <Link href={`/project/${project.id}`} passHref>
                     <CardImage>
                         <Image 
                             src={project.image}
@@ -26,11 +27,14 @@ const Projects = ( {projects} ) => {
                             layout="responsive"
                         />
                     </CardImage>
+                    </Link>
                 </CardImageContainer>
                 <CardContent>
+                    <Link href={`/project/${project.id}`} passHref>
                     <CardTitle>
                         {project.title}
                     </CardTitle>
+                    </Link>
                     <CardSubtitle>
                         {project.description}
                     </CardSubtitle>

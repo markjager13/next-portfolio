@@ -35,6 +35,7 @@ export const Card = styled.div`
 export const CardImageContainer = styled.div`
     border-radius: 4px 4px 0 0;
     overflow: hidden;
+    cursor: pointer;
 `;
 
 export const CardImage = styled.div`
@@ -63,6 +64,7 @@ export const CardTitle = styled.p`
     padding-top: 0.25em;
     font-family: "Source Sans Pro";
     font-weight: 600;
+    cursor: pointer;
 `;
 
 export const CardSubtitle = styled.p`
