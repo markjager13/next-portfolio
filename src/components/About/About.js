@@ -8,14 +8,9 @@ const About = () => {
   return (
     <AboutSection id="about">
         <AboutTitle>
-            {"Hi there, I'm "}
-            <span>
-                {"Mark"}
-            </span>
+            Who I am
         </AboutTitle>
-        <AboutSubTitle>
-            Front End Developer
-        </AboutSubTitle>
+
         <ProfileImg>
             <Image 
                 src="/images/profile2.jpg"
@@ -29,30 +24,6 @@ const About = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a pellentesque mauris. Duis in nibh tempus, euismod purus eu, cursus lorem. Nam.
         </AboutText>
-        <SocialList>
-            <li>
-                <Link href="https://www.linkedin.com/" passHref>
-                    <a>
-                        <AiFillLinkedin />
-                    </a>
-                </Link>
-            </li>
-            <li>
-                <Link href="https://www.github.com/" passHref>
-                    <a>
-                        <AiFillGithub />
-                    </a>
-                </Link>
-            </li>
-            <li>
-                <Link href="https://www.twitter.com/" passHref>
-                    <a>
-                        <AiFillTwitterCircle />
-                    </a>
-                </Link>
-            </li>
-
-        </SocialList>
     </AboutSection>
   )
 }

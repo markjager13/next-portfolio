@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import GlobalStyles from '../styles/globals';
+import Hero from '../components/Hero/Hero';
 import About from '../components/About/About';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects/Projects';
@@ -13,6 +14,7 @@ export default function Home(props) {
   return (
     <Layout>
       <GlobalStyles />
+      <Hero />
       <About />
       <Skills />
       <Projects projects={projects}/>
