@@ -13,7 +13,6 @@ export default function Home(props) {
 
   return (
     <Layout>
-      <GlobalStyles />
       <Hero />
       <About />
       <Skills />

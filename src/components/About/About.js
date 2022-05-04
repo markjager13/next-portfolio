@@ -8,7 +8,7 @@ const About = () => {
   return (
     <AboutSection id="about">
         <AboutTitle>
-            Who I am
+            About Me
         </AboutTitle>
 
         <ProfileImg>
