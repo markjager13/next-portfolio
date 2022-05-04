@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledHeader = styled.header`
     width: 100%;
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         max-width: 1024px;
         padding: 1em 0;
         margin: 0 auto;
@@ -31,7 +31,7 @@ export const StyledNav = styled.nav`
     display: grid;
     grid-template-columns: 80px 100px 1fr 80px;
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -100,7 +100,7 @@ export const NavIcon = styled.span`
         transition: all 0.2s ease-out;
     }
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         display: none;
     }
 `;
@@ -113,7 +113,7 @@ export const NavLinks = styled.ul`
     max-height: 0;
     transition: max-height 0.2s ease-out;
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         opacity: 1;
         visibility: visible;
         max-height: none;
@@ -128,10 +128,10 @@ export const NavLinks = styled.ul`
 export const NavLink = styled.a`
     display: block;
     padding: 20px;
-    color: #303030;
+    color: ${(props) => props.theme.colors.primary1};
 
     &:focus {
-        outline: 3px solid #303030;
+        outline: 3px solid ${(props) => props.theme.colors.primary1};
         outline-offset: 3px;
     }
 
@@ -143,13 +143,13 @@ export const NavLink = styled.a`
         transform: scale(1, 1);
     }
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         position: relative;
         margin-left: 2em;
         margin-bottom: 0;
         padding: 0;
         font-size: 1.25rem;
-        color: #303030;
+        color: ${(props) => props.theme.colors.primary1};
         cursor: pointer;
 
         &:before {
@@ -176,45 +176,15 @@ export const ModeToggleButton = styled.button`
     padding-bottom: 0.125rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    background: white;
+    background: ${(props) => props.theme.colors.background1};
     font-size: 1.25rem;
-    color: #303030;
-    font-family: "Source Sans Pro", sans-serif;
+    color: ${(props) => props.theme.colors.primary1};
+    font-family: ${(props) => props.theme.fonts.main};
     position: relative;
 
     &:focus {
-        outline: 3px solid #303030;
+        outline: 3px solid ${(props) => props.theme.colors.primary1};
         outline-offset: 3px;
     }
-
-        /*
-    @media (min-width: 48em) {
-        border-radius: 45px;
-        border: 1px solid grey;
-        transition: all 0.3s ease;
-
-        
-        &:hover {
-        border: 1px solid black;
-      
-            &:before {
-                transform: scale(1);
-                border: 3px solid black;
-            }
-        }
-
-        &:before {
-        transition: all 0.2s ease;
-        border-radius: 45px;
-        bottom: 0;
-        content: '';
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        }
-        
-    }
-    */
-
+    
 `;

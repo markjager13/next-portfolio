@@ -6,7 +6,7 @@ export const HeroSection = styled.div`
     padding: 9em 2em;
     padding-top: 12em;
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         padding: 9em 2em;
         max-width: 1024px;
         margin: 0 auto;
@@ -51,11 +51,10 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroSubTitle = styled.div`
-    background: #d7f6f6;
+    background: ${props => props.theme.colors.accent1};
     padding: 0.25em 1em;
     margin-bottom: 1em;
-
-
+    
     opacity: 0;
     animation-duration: 0.6s;
     animation-timing-function: ease-in; 
@@ -74,11 +73,9 @@ export const HeroSubTitle = styled.div`
         }
     }
 
-    @media (min-width: 48em) {
-        background: #d7f6f6;
+    @media ${(props) => props.theme.breakpoints.md} {
         padding-top: 0.25em;
         padding-bottom: 0.25em;
-        font-family: sans-serif;
         margin-bottom: 1em;
 
         grid-column: 1 / -1;
@@ -114,11 +111,11 @@ export const HeroSubTitle = styled.div`
 `;
 
 export const HeroText = styled.p`
-    font-family: "Source Sans Pro",sans-serif;
+    font-family: ${props => props.theme.fonts.main};
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
-    color: #303030;
+    color: ${props => props.theme.colors.primary1};
 
     opacity: 0;
     animation-duration: 0.6s;
@@ -139,7 +136,7 @@ export const HeroText = styled.p`
         }
     }
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         font-size: 1.125rem;
     }
 
@@ -165,7 +162,7 @@ export const SocialList = styled.ul`
 
         a {
             &:focus {
-                outline: 3px solid #303030;
+                outline: 3px solid ${(props) => props.theme.colors.primary1};
                 outline-offset: 3px;
             }
         }

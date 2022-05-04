@@ -26,14 +26,14 @@ export const StyledFooter = styled.div`
         padding: 0 1em;
         display: inline-block;
         font-size: 1.25rem;
-        color: #303030;
+        color: ${(props) => props.theme.colors.primary1};
     }
     
     a {
         cursor: pointer;
 
         &:focus {
-            outline: 3px solid #303030;
+            outline: 3px solid ${(props) => props.theme.colors.primary1};
             outline-offset: 3px;
         }
     }

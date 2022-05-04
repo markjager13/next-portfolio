@@ -10,15 +10,15 @@ export const SkillsList = styled.ul`
         font-weight: 600;
     }
 
-    @media (min-width: 440px) {
+    @media ${(props) => props.theme.breakpoints.vsm} {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (min-width: 640px) {
+    @media ${(props) => props.theme.breakpoints.sm} {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    @media (min-width: 840px) {
+    @media ${(props) => props.theme.breakpoints.md} {
         grid-template-columns: repeat(4, 1fr);
     }
 `;

@@ -12,7 +12,6 @@ export const Section = styled.section`
     animation-delay: 1000ms;
     animation-fill-mode: forwards;
 
-
     @keyframes fadeIn {
         0% {
             opacity: 0;

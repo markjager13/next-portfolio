@@ -9,12 +9,12 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: white;
-        font-family: "Source Sans Pro", sans-serif;
+        background: ${props => props.theme.colors.background1};
+        font-family: ${props => props.theme.fonts.main};
+        color: ${props => props.theme.colors.primary1};
         font-size: 1rem;
         font-weight: 300;
         line-height: 1.6;
-        color: #303030;
     }
 
     html {
@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
 
-    li{
+    li {
         list-style: none;
     }
 
@@ -37,14 +37,15 @@ const GlobalStyles = createGlobalStyle`
     h1,
     h2,
     h3 {
-        line-height: 1;
+        font-family: ${props => props.theme.fonts.title};
         margin: 0;
         font-weight: 300;
+        line-height: 1;
     }
 
     h1 {
         font-size: 2.25rem;
-        @media (min-width: 48em) {
+        @media ${(props) => props.theme.breakpoints.md} {
             font-size: 3.75rem;
         }
     }
@@ -55,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
     
     h3 {
         font-size: 1.25rem;
-        @media (min-width: 48em) {
+        @media ${(props) => props.theme.breakpoints.md} {
             font-size: 1.5rem;
         }
     }

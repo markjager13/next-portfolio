@@ -51,7 +51,7 @@ export const Title = styled.h1`
         }
     }
 
-    @media (min-width: 760px) {
+    @media ${(props) => props.theme.breakpoints.md} {
         text-align: left;
         padding-left: 0.5em;
     }
@@ -82,13 +82,13 @@ export const ContentTable = styled.table`
 
 export const ExternalLink = styled.a`
     font-weight: 600;
-    color: red;
+    color: ${props => props.theme.colors.accent2};
     align-self: bottom;
     margin-top: auto;
     transition: border-bottom ease 250ms;
 
         &:hover {
-            border-bottom: 2px solid red;
+            border-bottom: 2px solid ${props => props.theme.colors.accent2};
         }
 `;
     

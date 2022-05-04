@@ -3,18 +3,22 @@
 export default {
     // Temp fonts
     fonts: {
+      main: "Source Sans pro, sans-serif",
       title: "Source Sans Pro, sans-serif",
-      main: "Source Sans pro, sans-serif"
     },
     // Colors for layout
     colors: {
-      primary1: "#303030",
-      background1: "#ffffff",
+      primary1: "#303030", // dark grey
+      background1: "#ffffff", // white
+      accent1: "#d7f6f6", // light tourquoise
+      accent2: "#ff0000", // red
+      accent3: "#c6c6c6" // light grey
     },
     // Breakpoints for responsive design
     breakpoints: {
-      sm: 'screen and (max-width: 640px)',
-      md: 'screen and (max-width: 768px)',
-      lg: 'screen and (max-width: 1024px)'
+      vsm: 'screen and (min-width: 440px)',
+      sm: 'screen and (min-width: 640px)',
+      md: 'screen and (min-width: 768px)',
+      lg: 'screen and (min-width: 1024px)'
     },
   }

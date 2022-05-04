@@ -10,10 +10,10 @@ export const ContactEmail = styled.div`
 export const EmailLink = styled.a`
     display: inline-block;
     font-weight: 600;
-    color: #303030;
+    color: ${(props) => props.theme.colors.primary1};
 
     &:focus {
-        outline: 3px solid #303030;
+        outline: 3px solid ${(props) => props.theme.colors.primary1};
         outline-offset: 3px;
     }
 
@@ -24,7 +24,7 @@ export const EmailLink = styled.a`
         transition: border-bottom ease 250ms;
 
         &:hover {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid ${(props) => props.theme.colors.primary1};
         }
     }
 `;
@@ -54,7 +54,7 @@ export const SocialList = styled.ul`
             transition-duration: 0.2s; 
 
             &:focus {
-                outline: 3px solid #303030;
+                outline: 3px solid ${(props) => props.theme.colors.primary1};
                 outline-offset: 3px;
            }
         }

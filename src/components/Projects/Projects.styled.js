@@ -9,7 +9,7 @@ export const CardGrid = styled.div`
 `;
 
 export const Card = styled.div`
-    border: 1px solid rgb(198, 198, 198);
+    border: 1px solid ${props => props.theme.colors.accent3};
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -17,13 +17,13 @@ export const Card = styled.div`
     a {
         text-align: center;
         font-weight: 600;
-        color: #303030;
+        color: ${props => props.theme.colors.primary1};
         align-self: bottom;
         margin-top: auto;
         padding: 15px;
 
         &:focus {
-            outline: 3px solid #303030;
+            outline: 3px solid ${props => props.theme.colors.primary1};
             outline-offset: 3px;
         }
 
@@ -31,7 +31,7 @@ export const Card = styled.div`
             transition: border-bottom ease 250ms;
 
             &:hover {
-                border-bottom: 2px solid black;
+                border-bottom: 2px solid ${props => props.theme.colors.primary1};
             }
         }
     }
@@ -60,14 +60,14 @@ export const CardImage = styled.div`
 export const CardContent = styled.div`    
     line-height: 1.6;
     padding: 15px;
-    background: #fff;
+    background: ${props => props.theme.colors.background1};
 `;
 
 export const CardTitle = styled.p`
     font-size: 1.25rem;
     text-align: left;
     padding-top: 0.25em;
-    font-family: "Source Sans Pro";
+    font-family: ${props => props.theme.fonts.title};
     font-weight: 600;
     cursor: pointer;
 `;
