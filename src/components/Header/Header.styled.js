@@ -186,5 +186,4 @@ export const ModeToggleButton = styled.button`
         outline: 3px solid ${(props) => props.theme.colors.primary1};
         outline-offset: 3px;
     }
-    
 `;

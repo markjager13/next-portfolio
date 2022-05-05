@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink, ModeToggleButton } from './Header.styled'
-import { RiMoonClearLine } from 'react-icons/ri';
+import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink, ModeToggleButton, ThemeImage } from './Header.styled'
+import { RiMoonClearLine, RiSunLine } from 'react-icons/ri';
 
 const Header = () => {
 
@@ -46,8 +46,8 @@ const Header = () => {
                     </Link>
                 </li>
             </NavLinks>
-            <ModeToggleButton>
-                <RiMoonClearLine/>
+            <ModeToggleButton onClick={handleToggle}>
+                { !isDarkMode ? <RiMoonClearLine /> : <RiSunLine /> } 
             </ModeToggleButton>
         </StyledNav>
     </StyledHeader>
