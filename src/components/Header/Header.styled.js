@@ -136,7 +136,7 @@ export const NavLink = styled.a`
     }
 
     &:hover {
-        color: #111;
+        color: ${(props) => props.theme.colors.primary1};
     }
 
     &:hover:before {
@@ -157,7 +157,7 @@ export const NavLink = styled.a`
             content: '';
             display: block;
             height: 3px;
-            background: black;
+            background: ${(props) => props.theme.colors.primary1};
             bottom: -0.05em;
             left: 0;
             right: 0;
