@@ -1,19 +1,15 @@
-import { useState } from "react"
+import { useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
+import ToggleThemeContext from '../context/ToggleThemeContext';
 import { lightTheme, darkTheme } from "../themes/default";
 import GlobalStyles from './globals';
 
 const Theme = ({ children }) => {
 
-  const [theme, setTheme] = useState("light");
-
-  //this needs to be passed to header, how to get it there?
-  const toggleTheme = () => {
-    theme == 'light' ? setTheme('dark') : setTheme('light')
-  }
+  const { lightDarkTheme } = useContext(ToggleThemeContext);
 
   return (
-  <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+  <ThemeProvider theme={lightDarkTheme == 'light' ? lightTheme : darkTheme}>
     <GlobalStyles />
     {children}
   </ThemeProvider>

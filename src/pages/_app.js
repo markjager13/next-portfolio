@@ -1,11 +1,14 @@
 import Theme from '../styles/theme';
+import { ToggleThemeProvider } from '../context/ToggleThemeContext';
 
 function MyApp({ Component, pageProps }) {
   return (
   <>
-    <Theme>
-      <Component {...pageProps} />
-    </Theme>
+    <ToggleThemeProvider>
+      <Theme>
+        <Component {...pageProps} />
+      </Theme>
+    </ToggleThemeProvider>
   </>
   )
 }

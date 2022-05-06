@@ -1,16 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import Link from 'next/link'
+import ToggleThemeContext from '../../context/ToggleThemeContext';
 import { StyledHeader, StyledNav, NavToggle, NavToggleLabel, NavIcon, NavLinks, NavLink, ModeToggleButton, ThemeImage } from './Header.styled'
 import { RiMoonClearLine, RiSunLine } from 'react-icons/ri';
 
 const Header = () => {
 
-    const [isDarkMode, setDarkMode] = useState(false);
-
-    const handleToggle = () => {
-        setDarkMode(!isDarkMode);
-        // console.log(isDarkMode);
-     }
+    const { lightDarkTheme, toggleLightDarkTheme } = useContext(ToggleThemeContext);
 
   return (
     <StyledHeader id="header">
@@ -46,8 +42,8 @@ const Header = () => {
                     </Link>
                 </li>
             </NavLinks>
-            <ModeToggleButton onClick={handleToggle}>
-                { !isDarkMode ? <RiMoonClearLine /> : <RiSunLine /> } 
+            <ModeToggleButton onClick={toggleLightDarkTheme}>
+                { lightDarkTheme == 'light' ? <RiMoonClearLine /> : <RiSunLine/> }
             </ModeToggleButton>
         </StyledNav>
     </StyledHeader>
