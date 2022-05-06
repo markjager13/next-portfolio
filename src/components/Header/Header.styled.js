@@ -68,6 +68,8 @@ export const NavToggleLabel = styled.label`
     cursor: pointer;
     grid-row: 1;
     grid-column: 1;
+    color: ${(props) => props.theme.colors.primary1};
+
 
     @media (min-width: 48em) {
         display: none;
@@ -81,6 +83,9 @@ export const NavIcon = styled.span`
     width: 18px;
     position: relative;
     transition: background 0.2s ease-out;
+    background-color: ${(props) => props.theme.colors.primary1};
+
+
 
     &:before {
         top: 5px;
@@ -98,6 +103,8 @@ export const NavIcon = styled.span`
         width: 100%;
         position: absolute;
         transition: all 0.2s ease-out;
+        background-color: ${(props) => props.theme.colors.primary1};
+
     }
 
     @media ${(props) => props.theme.breakpoints.md} {
