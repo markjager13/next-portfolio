@@ -27,13 +27,13 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-    font-family: "Source Sans Pro",sans-serif;
+    font-family: ${(props) => props.theme.fonts.main};
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
-    color: #303030;
+    color: ${(props) => props.theme.colors.primary1};
 
-    @media (min-width: 48em) {
+    @media ${(props) => props.theme.breakpoints.md} {
         font-size: 1.125rem;
     }
 `;
