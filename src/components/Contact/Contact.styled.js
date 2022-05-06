@@ -49,7 +49,7 @@ export const SocialList = styled.ul`
         a {
             font-size: 2rem;
             cursor: pointer;
-            color: grey;
+            color: ${(props) => props.theme.colors.social1};
             opacity: 1;
             transition-duration: 0.2s; 
 

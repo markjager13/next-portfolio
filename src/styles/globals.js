@@ -15,6 +15,8 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1rem;
         font-weight: 300;
         line-height: 1.6;
+        transition: all 0.3s linear;
+
     }
 
     html {
