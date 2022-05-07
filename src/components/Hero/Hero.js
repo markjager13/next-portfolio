@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { HeroSection, HeroTitle, HeroSubTitle, HeroText, SocialList } from './Hero.styled'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 
-const Hero = () => {
+const Hero = () => {    
   return (
     <HeroSection>
         <HeroTitle>

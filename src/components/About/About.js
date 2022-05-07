@@ -5,6 +5,7 @@ import { AboutSection, AboutTitle, AboutSubTitle, ProfileImg, AboutText, SocialL
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 
 const About = () => {
+    
   return (
     <AboutSection id="about">
         <AboutTitle>
