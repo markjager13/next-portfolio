@@ -9,7 +9,7 @@ const Footer = () => {
         <p>&copy; Mark Jager</p>
         <span> | </span>
         <Link href="#top">
-            <a>Back to top</a>
+            <a onMouseDown={e => e.preventDefault()}>Back to top</a>
         </Link>
   </StyledFooter>
   )

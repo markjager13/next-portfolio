@@ -44,3 +44,17 @@ export async function getStaticProps(context) {
       },
   };
 }
+
+console.log(
+  '\n' +
+  '#     #    ###\n' +
+  '#     # #  ###\n' +
+  '#     # #  ###\n' +
+  '####### #   #\n' +
+  '#     # #\n' +
+  '#     # #  ###\n' +
+  '#     # #  ###\n' +
+  '\n' +
+  'Thanks for checking out my website!\n' +
+  '— Mark\n'
+);

@@ -188,6 +188,8 @@ export const ModeToggleButton = styled.button`
     color: ${(props) => props.theme.colors.primary1};
     font-family: ${(props) => props.theme.fonts.main};
     position: relative;
+    transition: all 0.3s linear;
+
 
     &:focus {
         outline: 3px solid ${(props) => props.theme.colors.primary1};

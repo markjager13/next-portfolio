@@ -18,31 +18,31 @@ const Header = () => {
             <NavLinks>
                 <li>
                     <Link href="/#top" passHref>
-                        <NavLink>Home</NavLink>
+                        <NavLink onMouseDown={e => e.preventDefault()}>Home</NavLink>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/#about" passHref>
-                        <NavLink>About</NavLink>
+                    <Link href="/#about" passHref >
+                        <NavLink onMouseDown={e => e.preventDefault()}>About</NavLink>
                     </Link>
                 </li>
                 <li>
                     <Link href="/#skills" passHref>
-                        <NavLink>Skills</NavLink>
+                        <NavLink onMouseDown={e => e.preventDefault()}>Skills</NavLink>
                     </Link>
                 </li>
                 <li>
                     <Link href="/#projects" passHref>
-                        <NavLink>Projects</NavLink>
+                        <NavLink onMouseDown={e => e.preventDefault()}>Projects</NavLink>
                     </Link>            
                 </li>
                 <li>
                     <Link href="/#contact" passHref>
-                        <NavLink>Contact</NavLink>
+                        <NavLink onMouseDown={e => e.preventDefault()}>Contact</NavLink>
                     </Link>
                 </li>
             </NavLinks>
-            <ModeToggleButton onClick={toggleLightDarkTheme}>
+            <ModeToggleButton onClick={toggleLightDarkTheme} onMouseDown={e => e.preventDefault()}>
                 { lightDarkTheme == 'light' ? <RiMoonClearLine /> : <RiSunLine/> }
             </ModeToggleButton>
         </StyledNav>
