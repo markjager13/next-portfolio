@@ -16,7 +16,7 @@ const Hero = () => {
             <h3>Front End Developer</h3>
         </HeroSubTitle>
         <HeroText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non dignissim neque. In pretium nisl.
+            A curiosity-driven developer with a passion for building efficient and intuitive user experiences. 
         </HeroText>
         <SocialList>
             <li>

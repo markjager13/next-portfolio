@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { AboutSection, AboutTitle, AboutSubTitle, ProfileImg, AboutText, SocialList } from './About.styled'
-import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
+import { AboutSection, AboutTitle, ProfileImg, AboutText } from './About.styled'
 
 const About = () => {
     
