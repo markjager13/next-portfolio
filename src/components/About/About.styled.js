@@ -15,7 +15,6 @@ export const AboutSection = styled.div`
         grid-template-columns: 1fr 200px;
         grid-template-areas:
         "title img"
-        "subtitle img"
         "text img";
         grid-column-gap: 2em;
     }
@@ -39,8 +38,8 @@ export const AboutSection = styled.div`
 `;
 
 export const AboutTitle = styled.h2`
-    margin-bottom: 0.25em;
     grid-area: title;
+    margin-bottom: 0.25em;
 `;
 
 export const ProfileImg = styled.div`
@@ -64,7 +63,8 @@ export const ProfileImg = styled.div`
     }
 `;
 
-export const AboutText = styled.p`
+export const AboutText = styled.div`
+    grid-area: text;
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1rem;
     font-weight: 300;
@@ -77,6 +77,10 @@ export const AboutText = styled.p`
     animation: fadeIn ease 1.25s;
     animation-delay: 1000ms;
     animation-fill-mode: forwards;
+
+    p {
+        margin-bottom: 10px;
+    }
 
 
     @keyframes fadeIn {
