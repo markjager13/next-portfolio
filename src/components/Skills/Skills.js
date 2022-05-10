@@ -6,7 +6,9 @@ const Skills = () => {
   return (
     <Section id="skills">
         <SectionTitle>My Skills</SectionTitle>
-        <SectionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</SectionText>
+        <SectionText>
+          My courses taught me a great deal about object-oriented programming, data structures, and algorithms. Since graduating, I’ve became interested in the web and front end development. These days, much of my free time is spent learning JavaScript and the React ecosystem. 
+        </SectionText>
         <SkillsList>
             <li>JavaScript</li>
             <li>HTML</li>

@@ -12,7 +12,9 @@ const Projects = ( {projects} ) => {
         <SectionTitle>
             {"What I've Been Working On"}
         </SectionTitle>
-        <SectionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</SectionText>
+        <SectionText>
+        My curiosity is always driving me to explore new concepts and frameworks. Take a look at some of my projects to see what I’ve been learning.
+        </SectionText>
         <CardGrid>
         {projects.map(project => (
             <Card key={project.id}>

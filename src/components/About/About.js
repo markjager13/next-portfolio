@@ -10,7 +10,6 @@ const About = () => {
         <AboutTitle>
             About Me
         </AboutTitle>
-
         <ProfileImg>
             <Image 
                 src="/images/profile2.jpg"

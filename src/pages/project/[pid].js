@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../../styles/globals';
-import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText } from './ProjectDetailsPage.styled';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText, ContentTitle } from './ProjectDetailsPage.styled';
 import { Layout } from '../../layout/Layout';
 
 const ProjectDetailsPage = (props) => {
@@ -24,10 +24,7 @@ const ProjectDetailsPage = (props) => {
         </Title>
         <ContentWrapper>
           <ContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            {loadedProject.introText}
           </ContentText>
           <ContentTable>
             <thead>
@@ -56,16 +53,20 @@ const ProjectDetailsPage = (props) => {
                 priority="false"
               />
           <ContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            <ContentTitle>Project Purpose and Goal</ContentTitle>
+            {loadedProject.purposeText}
           </ContentText>
           <ContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            <ContentTitle>Web Stack and Explanation</ContentTitle>
+            {loadedProject.stackText}
+          </ContentText>
+          <ContentText>
+            <ContentTitle>Problems and Thought Process</ContentTitle>
+            {loadedProject.problemsText}
+          </ContentText>
+          <ContentText>
+            <ContentTitle>Lessons Learned</ContentTitle>
+            {loadedProject.lessonsText}
           </ContentText>
         </ContentWrapper>
       </Section>

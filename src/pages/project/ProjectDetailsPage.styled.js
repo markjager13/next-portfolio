@@ -91,6 +91,11 @@ export const ExternalLink = styled.a`
             border-bottom: 2px solid ${props => props.theme.colors.accent2};
         }
 `;
+
+export const ContentTitle = styled.h3`
+    font-weight: 600;
+    margin-bottom: 0.25em;
+`;
     
 export const ContentText = styled.p`
     max-width: 1024px;

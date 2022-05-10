@@ -8,7 +8,9 @@ const Contact = () => {
   return (
     <Section id="contact">
       <SectionTitle>Get In Touch</SectionTitle>
-      <SectionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id vehicula eros. Morbi rutrum non dui sit amet gravida. Maecenas dictum eget turpis at accumsan. Ut vulputate vehicula lectus sit amet pulvinar. Donec.</SectionText>
+      <SectionText>
+        I am currently looking to contribute my skills to a team where I can help build memorable products and grow as a developer. If you are interested in learning more about how I can contribute, feel free to contact me via email or on social media. 
+      </SectionText>
       <ContactEmail>
         <Link href="mailto: test@test.com" passHref>
           <EmailLink>
