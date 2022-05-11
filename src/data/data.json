@@ -33,7 +33,7 @@
             "detailsImageStack": "/images/nextjsIcon.png", 
             "stack": ["Next.js", "Styled-Components"],
             "github": "https://github.com/markjager13/next-portfolio",
-            "demo": "google.com"
+            "demo": "https://markjager.dev/"
         }
     ]
 }
