@@ -13,7 +13,7 @@ const Projects = ( {projects} ) => {
             {"What I've Been Working On"}
         </SectionTitle>
         <SectionText>
-        My curiosity is always driving me to explore new concepts and frameworks. Take a look at some of my projects to see what I’ve been learning.
+            My curiosity is always driving me to explore new concepts and frameworks. Take a look at some of my projects to see what I’ve been learning.
         </SectionText>
         <CardGrid>
         {projects.map(project => (
@@ -27,6 +27,7 @@ const Projects = ( {projects} ) => {
                             width={1688}
                             height={896}
                             layout="responsive"
+                            priority={true}
                         />
                     </CardImage>
                     </Link>
