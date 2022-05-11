@@ -92,6 +92,13 @@ export const ExternalLink = styled.a`
         }
 `;
 
+export const ImageContainer = styled.div`
+    border: 1px solid ${props => props.theme.colors.accent3};
+    border-radius: 4px;
+    overflow: hidden;
+
+`;
+
 export const ContentBlock = styled.div`
     display: flex;
     flex-direction: column;

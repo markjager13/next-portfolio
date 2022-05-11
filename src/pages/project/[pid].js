@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../../styles/globals';
-import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentBlock, LeftContent, RightContent, ContentText, ContentTitle } from '../../components/Projects/ProjectDetailsPage.styled';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ImageContainer, ContentBlock, LeftContent, RightContent, ContentText, ContentTitle } from '../../components/Projects/ProjectDetailsPage.styled';
 import { Layout } from '../../layout/Layout';
 
 const ProjectDetailsPage = (props) => {
@@ -44,15 +44,17 @@ const ProjectDetailsPage = (props) => {
               ))}
             </tbody>
           </ContentTable>
-          <Image 
-                src={loadedProject.image}
-                className=""
-                alt="project image"
-                width={1688}
-                height={896}
-                layout="responsive"
-                priority="false"
-            />
+          <ImageContainer>
+            <Image 
+                  src={loadedProject.image}
+                  className=""
+                  alt="project image"
+                  width={1688}
+                  height={896}
+                  layout="responsive"
+                  priority="false"
+              />
+          </ImageContainer>
           <ContentText>
             <ContentTitle>Project Purpose and Goal</ContentTitle>
             {loadedProject.purposeText}
