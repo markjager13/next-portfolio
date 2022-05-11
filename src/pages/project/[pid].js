@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../../styles/globals';
-import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentBlock, LeftContent, RightContent, ContentText, ContentTitle } from './ProjectDetailsPage.styled';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentBlock, LeftContent, RightContent, ContentText, ContentTitle } from '../../components/Projects/ProjectDetailsPage.styled';
 import { Layout } from '../../layout/Layout';
 
 const ProjectDetailsPage = (props) => {
