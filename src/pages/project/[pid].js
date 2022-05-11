@@ -45,10 +45,10 @@ const ProjectDetailsPage = (props) => {
             </tbody>
           </ContentTable>
           <Image 
-                src="/images/portfolio-details.jpg"
+                src={loadedProject.image}
                 alt="project image"
-                width={931}
-                height={285}
+                width={1688}
+                height={896}
                 layout="responsive"
                 priority="false"
               />

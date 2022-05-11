@@ -10,7 +10,10 @@
             "stackText": "Originally, I had built this app using plain HTML, CSS, and JavaScript. More recently, I rebuilt the app using React in order to solidify my understanding of React concepts. Additionally, rebuilding this project also gave me chance to better organize my CSS using CSS modules.",
             "problemsText": "My colleagues required text inputs instead of a date/time picker. This required me to translate the text inputs into date objects prior to performing any calculations. I also had to ensure that the start and end times of each shift were rounded, meaning each time should end in either a 5 or 0. To do this I added a few lines in the generate results logic that would alter the times appropriately before formatting the results.",
             "lessonsText": "This project helped deepen my understanding of react concepts. It also allowed me to explore alternative ways to solve common tasks. For instance I used react-hook-form to handle my form inputs. This tool performs input validation and you don't have to track value and onChange events manually. It really helped clean up my code. Also I learned how to use react portals to render my modal component. This provides the ability for an element to render outside the default hierarchy without compromising the parent-child relationship between components.",
-            "image": "/images/projectimage01.jpg",
+            "image": "/images/gsc/screenmain2.png",
+            "detailsImage1": "",
+            "detailsImage2": "",
+            "detailsImageStack": "", 
             "stack": ["React", "CSS Modules"],
             "github": "https://github.com/markjager13/react-gallery-shift-calculator",
             "demo": "https://galleryshiftcalculator.netlify.app/"
@@ -24,7 +27,10 @@
             "stackText": "I had already built a similar portfolio website using plain HTML, CSS, and JavaScript. Admittedly, Next.js might be somewhat overkill for the purpose of designing a portfolio. However, I was excited to learn more about Next.js and some of the benefits it offers. Namely, things like server side rendering and dynamic routing can be especially useful for portfolios or blogs.",
             "problemsText": "Early on, I was having some difficulty in using dynamic routes and fetching the appropriate project data from a local file. I realized that I had not quite grasped getStaticProps and getStaticPaths, two functions that are critical for page pre-rendering and data fetching. The Next.js documentation was very useful in clearing up my confusion, along with Maximilian Schwarzmüller's Next.js Udemy course.",
             "lessonsText": "In addition to dynamic routing and static generation, I was also able learn a great deal about Styled-Components. For instance, styling elements dynamically using props and theming using the ThemeProvider component allowed for greater flexibility when implementing my dark mode toggle. Overall, I feel much more confident using Next.js and Styled-Components for future projects.",
-            "image": "/images/projectimage02.jpg",
+            "image": "/images/portfolio/screenmain.png",
+            "detailsImage1": "",
+            "detailsImage2": "",
+            "detailsImageStack": "", 
             "stack": ["Next.js", "Styled-Components"],
             "github": "https://github.com/markjager13/next-portfolio",
             "demo": "google.com"

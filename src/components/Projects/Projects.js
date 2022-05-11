@@ -24,8 +24,8 @@ const Projects = ( {projects} ) => {
                         <Image 
                             src={project.image}
                             alt="project image"
-                            width={480}
-                            height={480}
+                            width={1688}
+                            height={896}
                             layout="responsive"
                         />
                     </CardImage>
