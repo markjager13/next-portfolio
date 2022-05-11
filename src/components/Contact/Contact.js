@@ -14,7 +14,7 @@ const Contact = () => {
       <ContactEmail>
         <Link href="mailto: test@test.com" passHref>
           <EmailLink>
-              <span>test@test.com</span>
+              <span>markjager13@gmail.com</span>
           </EmailLink>
         </Link>
       </ContactEmail>
