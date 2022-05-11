@@ -25,7 +25,7 @@ This project was designed to introduce myself and showcase my technical backgrou
   * Becasue of SSR, the website's first render doesn't happen on the user's device but, rather, on the server side. 
   * For this reason, the site has no idea what the user's color/theme preferences are before it reaches the client.
   * One way to solve this issue, is to add a funciton in my custom document.js file that gets the initial theme props and injects them into the page before the page loads.
-* For now, my project data is simply stored in a local data file. However, it might be better to use GraphQL to manage my data.  
+* For now, my project data is simply stored in a local data file. However, it might be better to use GraphQL to manage that data.  
 
 ### Installation
 * Clone the repo
