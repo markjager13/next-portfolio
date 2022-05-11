@@ -13,7 +13,7 @@
             "image": "/images/gsc/screenmain2.png",
             "detailsImage1": "",
             "detailsImage2": "",
-            "detailsImageStack": "", 
+            "detailsImageStack": "/images/reactIcon.png", 
             "stack": ["React", "CSS Modules"],
             "github": "https://github.com/markjager13/react-gallery-shift-calculator",
             "demo": "https://galleryshiftcalculator.netlify.app/"
@@ -30,7 +30,7 @@
             "image": "/images/portfolio/screenmain.png",
             "detailsImage1": "",
             "detailsImage2": "",
-            "detailsImageStack": "", 
+            "detailsImageStack": "/images/nextjsIcon.png", 
             "stack": ["Next.js", "Styled-Components"],
             "github": "https://github.com/markjager13/next-portfolio",
             "demo": "google.com"

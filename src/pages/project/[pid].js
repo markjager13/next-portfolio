@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import GlobalStyles from '../../styles/globals';
-import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentText, ContentTitle } from './ProjectDetailsPage.styled';
+import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ContentBlock, LeftContent, RightContent, ContentText, ContentTitle } from './ProjectDetailsPage.styled';
 import { Layout } from '../../layout/Layout';
 
 const ProjectDetailsPage = (props) => {
@@ -46,20 +46,35 @@ const ProjectDetailsPage = (props) => {
           </ContentTable>
           <Image 
                 src={loadedProject.image}
+                className=""
                 alt="project image"
                 width={1688}
                 height={896}
                 layout="responsive"
                 priority="false"
-              />
+            />
           <ContentText>
             <ContentTitle>Project Purpose and Goal</ContentTitle>
             {loadedProject.purposeText}
           </ContentText>
-          <ContentText>
-            <ContentTitle>Web Stack and Explanation</ContentTitle>
-            {loadedProject.stackText}
-          </ContentText>
+          <ContentBlock>
+            <LeftContent>
+              <Image 
+                    src={loadedProject.detailsImageStack}
+                    alt="project image"
+                    width={150}
+                    height={150}
+                    layout="intrinsic"
+                    priority="false"
+                  />
+            </LeftContent>
+            <RightContent>
+                  <ContentText>
+                    <ContentTitle>Web Stack and Explanation</ContentTitle>
+                    {loadedProject.stackText}
+                </ContentText>
+            </RightContent>
+          </ContentBlock>
           <ContentText>
             <ContentTitle>Problems and Thought Process</ContentTitle>
             {loadedProject.problemsText}

@@ -92,6 +92,46 @@ export const ExternalLink = styled.a`
         }
 `;
 
+export const ContentBlock = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+    
+    @media ${(props) => props.theme.breakpoints.md} {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 3.5em 2em;
+
+    }
+
+`;
+
+export const LeftContent = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media ${(props) => props.theme.breakpoints.md} {
+        width: 55%;   
+    }
+`;
+
+export const RightContent = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media ${(props) => props.theme.breakpoints.md} {
+        width: 45%;   
+    }`;
+
 export const ContentTitle = styled.h3`
     font-weight: 600;
     margin-bottom: 0.25em;
@@ -99,5 +139,5 @@ export const ContentTitle = styled.h3`
     
 export const ContentText = styled.p`
     max-width: 1024px;
-    margin: 1em auto;
+    margin: 3em auto;
 `;
