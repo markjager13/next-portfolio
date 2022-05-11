@@ -20,21 +20,21 @@ const Hero = () => {
         </HeroText>
         <SocialList>
             <li>
-                <Link href="https://www.linkedin.com/" passHref>
+                <Link href="https://www.linkedin.com/in/markjager13/" passHref>
                     <a>
                         <AiFillLinkedin />
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="https://www.github.com/" passHref>
+                <Link href="https://github.com/markjager13" passHref>
                     <a>
                         <AiFillGithub />
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href="https://www.twitter.com/" passHref>
+                <Link href="https://twitter.com/MarkJager13" passHref>
                     <a>
                         <AiFillTwitterCircle />
                     </a>
