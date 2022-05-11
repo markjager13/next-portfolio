@@ -26,22 +26,8 @@
             "lessonsText": "In addition to dynamic routing and static generation, I was also able learn a great deal about Styled-Components. For instance, styling elements dynamically using props and theming using the ThemeProvider component allowed for greater flexibility when implementing my dark mode toggle. Overall, I feel much more confident using Next.js and Styled-Components for future projects.",
             "image": "/images/projectimage02.jpg",
             "stack": ["Next.js", "Styled-Components"],
-            "github": "https://google.com",
-            "demo": "https://google.com"
-        },
-        {
-            "id": "p3",
-            "title": "Employee Directory",
-            "description": "A full-stack web app that lists employees and allows users to perform insert, update, and delete actions.",
-            "introText": "",
-            "purposeText": "",
-            "stackText": "",
-            "problemsText": "",
-            "lessonsText": "",
-            "image": "/images/projectimage03.jpg",
-            "stack": ["React", "CSS Modules", "Node.js", "Express", "MongoDB"],
-            "github": "https://google.com",
-            "demo": "https://google.com"
+            "github": "https://github.com/markjager13/next-portfolio",
+            "demo": "google.com"
         }
     ]
 }
