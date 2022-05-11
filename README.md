@@ -3,7 +3,7 @@
 ### Project Introduction
 This project was designed to introduce myself and showcase my technical background. I had already built a similar portfolio website using plain HTML, CSS, and JavaScript. However, I was excited to learn more about Next.js and some of the benefits it offers.
 
-[Live Demo]()
+[Live Demo](https://markjager.dev/)
 
 ### How I worked on this project
 * I built the main section components and identified global component styles.
