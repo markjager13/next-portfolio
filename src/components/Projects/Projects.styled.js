@@ -45,7 +45,6 @@ export const CardImageContainer = styled.div`
 
 export const CardImage = styled.div`
     width: 100%;
-    height: 275px;
     object-fit: cover;
     display: block;
     border-radius: 4px 4px 0 0;

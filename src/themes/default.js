@@ -7,6 +7,7 @@ const defaultTheme = {
   // Breakpoints for responsive design
   breakpoints: {
     vsm: 'screen and (min-width: 440px)',
+    smlr: 'screen and (min-width: 530px)',
     sm: 'screen and (min-width: 640px)',
     md: 'screen and (min-width: 768px)',
     lg: 'screen and (min-width: 1024px)'
