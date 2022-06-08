@@ -112,7 +112,7 @@ export const HeroSubTitle = styled.div`
 
 export const HeroText = styled.p`
     font-family: ${props => props.theme.fonts.main};
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 300;
     line-height: 1.6;
     color: ${props => props.theme.colors.primary1};
@@ -134,10 +134,6 @@ export const HeroText = styled.p`
             opacity: 1;
             transform: translateY(0);
         }
-    }
-
-    @media ${(props) => props.theme.breakpoints.md} {
-        font-size: 1.125rem;
     }
 
 `;

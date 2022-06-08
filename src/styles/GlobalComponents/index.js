@@ -28,7 +28,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
     font-family: ${(props) => props.theme.fonts.main};
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 300;
     line-height: 1.6;
     color: ${(props) => props.theme.colors.primary1};

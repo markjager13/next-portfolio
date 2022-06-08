@@ -34,6 +34,23 @@
             "stack": ["Next.js", "Styled-Components"],
             "github": "https://github.com/markjager13/next-portfolio",
             "demo": "https://markjager.dev/"
+        },
+        {
+            "id": "p3",
+            "title": "Wise Words",
+            "description": "A full-stack web app that randomly displays an ancient language quote based on user selection.",
+            "introText": "This project was inspired by my interest in ancient history and dead languages. The app generates a random ancient language quote that can then be translated into English. The frontend app fetches quotes from a simple backend API that I wrote using Node.js, Express, and MongoDB.",
+            "purposeText": "I thought a quotes app was a great way to review my knowledge of working with plain JavaScript on the frontend. Also, instead of relying on a quotes API that had already been built, I decided to build my own in order to test my understanding of Node.js.  ",
+            "stackText": "The frontend consists of HTML, CSS, and JavaScript. I decided to take a break from frameworks/libraries and focus on using plain JavaScript to manipulate the DOM. As for the backend, I used Node.js and Express to set up a server and connect to MongoDB Atlas. Express made the process of setting up a server pretty easy and allowed me to get the backend up and running relatively quickly.",
+            "problemsText": "While building this project I had to consider how each quote would be retrieved and displayed. Since the database was relatively small (124 total quotes), one approach would be to have the client fetch all quotes from the backend API on page load. I could then use Math.random to randomly select a quote to display. Alternatively, I could retrieve a single quote from the backend and DB for each request. I chose the latter option since fetching single quote per request was lighter and faster. I also chose this approach since I wanted to practice building several different routes on the backend (one for each language category).",
+            "lessonsText": "Building this project was good practice and allowed me to review how data flows between client and server. It was also nice getting to work with a database. I've done some Java/MySQL work during school and have worked through some Node.js/MongoDB tutorials. However, I wanted to test my understanding of backend Node.js, Express, and MongoDB by building something myself.",
+            "image": "/images/wisewords/screentab.png",
+            "detailsImage1": "",
+            "detailsImage2": "",
+            "detailsImageStack": "/images/node_logo.png",
+            "stack": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "REST API"],
+            "github": "https://github.com/markjager13/wise-words-frontend",
+            "demo": "https://wise-words-app.netlify.app/"
         }
     ]
 }

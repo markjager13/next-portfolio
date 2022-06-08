@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
         background: ${props => props.theme.colors.background1};
         font-family: ${props => props.theme.fonts.main};
         color: ${props => props.theme.colors.primary1};
-        font-size: 1rem;
+        font-size: 1.15rem;
         font-weight: 300;
         line-height: 1.6;
         transition: all 0.3s linear;

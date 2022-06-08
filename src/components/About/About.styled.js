@@ -66,7 +66,7 @@ export const ProfileImg = styled.div`
 export const AboutText = styled.div`
     grid-area: text;
     font-family: ${(props) => props.theme.fonts.main};
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 300;
     line-height: 1.6;
     color: ${(props) => props.theme.colors.primary1};
@@ -90,10 +90,6 @@ export const AboutText = styled.div`
         100% {
             opacity: 1;
         }
-    }
-
-    @media ${(props) => props.theme.breakpoints.md} {
-        font-size: 1.125rem;
     }
 
 `;

@@ -74,5 +74,5 @@ export const CardTitle = styled.p`
 
 export const CardSubtitle = styled.p`
     text-align: left;
-    font-size: 1.125rem;
+    font-size: 1.15rem;
 `;

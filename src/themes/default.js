@@ -15,7 +15,7 @@ const defaultTheme = {
 
 const light = {
   colors: {
-    primary1: "#303030", // dark grey
+    primary1: "#1e1e1e", // dark grey
     background1: "#ffffff", // white
     accent1: "#d7f6f6", // light tourquoise
     accent2: "#ff0000", // red
