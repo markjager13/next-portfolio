@@ -12,10 +12,12 @@ const Skills = () => {
         <SkillsList>
             <li>JavaScript</li>
             <li>React</li>
+            <li>Redux</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>Git</li>
-            <li>Node.js / Express</li>
+            <li>Node.js</li>
+            <li>Express</li>
             <li>Java</li>
             <li>SQL</li>
         </SkillsList>
