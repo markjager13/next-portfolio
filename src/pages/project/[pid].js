@@ -38,8 +38,8 @@ const ProjectDetailsPage = (props) => {
               {loadedProject.stack.map((stackItem, index) => (
                 <tr key={index}>
                   <td>{stackItem}</td>
-                  <td>{index === 0 ? <Link href={loadedProject.github} passHref><ExternalLink>Repository</ExternalLink></Link> : ""}</td>
-                  <td>{index === 0 ? <Link href={loadedProject.demo} passHref><ExternalLink>View Site</ExternalLink></Link> : ""}</td>
+                  <td>{index === 0 ? <Link href={loadedProject.github} target="_blank" rel="noopener noreferrer" passHref><ExternalLink>Repository</ExternalLink></Link> : ""}</td>
+                  <td>{index === 0 ? <Link href={loadedProject.demo} target="_blank" rel="noopener noreferrer" passHref><ExternalLink>View Site</ExternalLink></Link> : ""}</td>
                 </tr>
               ))}
             </tbody>
