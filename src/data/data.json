@@ -51,6 +51,23 @@
             "stack": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "REST API"],
             "github": "https://github.com/markjager13/wise-words-frontend",
             "demo": "https://wise-words-app.netlify.app/"
+        },
+        {
+            "id": "p4",
+            "title": "Ecommerce App (in progress)",
+            "description": "A full-stack e-commerce app with product catalog, shopping cart, and checkout.",
+            "introText": "",
+            "purposeText": "",
+            "stackText": "",
+            "problemsText": "",
+            "lessonsText": "",
+            "image": "/images/ecommerce/ecommerce-placeholder2.png",
+            "detailsImage1": "",
+            "detailsImage2": "",
+            "detailsImageStack": "",
+            "stack": ["Angular", "Spring-Boot", "MySQL", "REST API"],
+            "github": "",
+            "demo": ""
         }
     ]
 }

@@ -16,7 +16,7 @@ const Hero = () => {
             <h3>Junior Software Developer</h3>
         </HeroSubTitle>
         <HeroText>
-            A curiosity-driven developer with a passion for building efficient and intuitive user experiences. 
+            A curiosity-driven developer with a passion for building efficient and intuitive software applications. 
         </HeroText>
         <SocialList>
             <li>
