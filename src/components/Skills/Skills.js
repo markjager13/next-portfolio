@@ -12,7 +12,6 @@ const Skills = () => {
         <SkillsList>
             <li>JavaScript</li>
             <li>React</li>
-            <li>Redux</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>Git</li>
