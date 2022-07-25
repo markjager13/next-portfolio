@@ -47,7 +47,9 @@ const Projects = ( {projects} ) => {
                 </CardImageContainer>
                 <CardContent>
                     {project.id === "p4" ?
-                    <div></div>
+                    <CardTitle>
+                        {project.title}
+                    </CardTitle>
                     :
                     <Link href={`/project/${project.id}`} passHref>
                     <CardTitle>
