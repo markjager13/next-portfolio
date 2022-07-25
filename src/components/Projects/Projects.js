@@ -19,8 +19,7 @@ const Projects = ( {projects} ) => {
         {projects.map(project => (
             <Card key={project.id}>
                 <CardImageContainer>
-                    {/* if project is p4 (in progress) do not render links */}
-                    {project.id === "p4" ? "" : <Link href={`/project/${project.id}`} passHref>
+                    <Link href={project.id === "p4" ? "#" : `/project/${project.id}`} passHref>
                     <CardImage>
                         <Image 
                             src={project.image}
@@ -31,21 +30,19 @@ const Projects = ( {projects} ) => {
                             priority={true}
                         />
                     </CardImage>
-                    </Link>}
+                    </Link>
                 </CardImageContainer>
                 <CardContent>
-                    {/* if project is p4 (in progress) do not render links */}
-                    {project.id === "p4" ? "" : <Link href={`/project/${project.id}`} passHref>
+                    <Link href={`/project/${project.id}`} passHref>
                     <CardTitle>
                         {project.title}
                     </CardTitle>
                     </Link>
-                    }  
                     <CardSubtitle>
                         {project.description}
                     </CardSubtitle>
                 </CardContent>
-                <Link href={`/project/${project.id}`}>
+                <Link href={project.id === "p4" ? "#" : `/project/${project.id}`}>
                     <a><span>{"View Project >"}</span></a>
                 </Link>
             </Card>            
