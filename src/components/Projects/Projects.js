@@ -19,7 +19,19 @@ const Projects = ( {projects} ) => {
         {projects.map(project => (
             <Card key={project.id}>
                 <CardImageContainer>
-                    <Link href={project.id === "p4" ? "#" : `/project/${project.id}`} passHref>
+                    {project.id === "p4" ?
+                        <CardImage>
+                        <Image 
+                            src={project.image}
+                            alt="project image"
+                            width={1688}
+                            height={896}
+                            layout="responsive"
+                            priority={true}
+                        />
+                        </CardImage>
+                    :
+                    <Link href={`/project/${project.id}`} passHref>
                     <CardImage>
                         <Image 
                             src={project.image}
@@ -31,6 +43,7 @@ const Projects = ( {projects} ) => {
                         />
                     </CardImage>
                     </Link>
+                    }
                 </CardImageContainer>
                 <CardContent>
                     <Link href={`/project/${project.id}`} passHref>
@@ -42,9 +55,13 @@ const Projects = ( {projects} ) => {
                         {project.description}
                     </CardSubtitle>
                 </CardContent>
-                <Link href={project.id === "p4" ? "#" : `/project/${project.id}`}>
-                    <a><span>{"View Project >"}</span></a>
+                {project.id === "p4" ?
+                <div></div>
+                :
+                <Link href={`/project/${project.id}`}>
+                <a><span>{"View Project >"}</span></a>
                 </Link>
+                }
             </Card>            
         ))}
         </CardGrid>
