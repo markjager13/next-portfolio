@@ -19,55 +19,32 @@ const Projects = ( {projects} ) => {
         {projects.map(project => (
             <Card key={project.id}>
                 <CardImageContainer>
-                    {project.id === "p4" ?
-                        <CardImage>
-                        <Image 
-                            src={project.image}
-                            alt="project image"
-                            width={1688}
-                            height={896}
-                            layout="responsive"
-                            priority={true}
-                        />
-                        </CardImage>
-                    :
                     <Link href={`/project/${project.id}`} passHref>
-                    <CardImage>
-                        <Image 
-                            src={project.image}
-                            alt="project image"
-                            width={1688}
-                            height={896}
-                            layout="responsive"
-                            priority={true}
-                        />
-                    </CardImage>
+                        <CardImage>
+                            <Image 
+                                src={project.image}
+                                alt="project image"
+                                width={1688}
+                                height={896}
+                                layout="responsive"
+                                priority={true}
+                            />
+                        </CardImage>
                     </Link>
-                    }
                 </CardImageContainer>
                 <CardContent>
-                    {project.id === "p4" ?
-                    <CardTitle>
-                        {project.title}
-                    </CardTitle>
-                    :
                     <Link href={`/project/${project.id}`} passHref>
-                    <CardTitle>
-                        {project.title}
-                    </CardTitle>
+                        <CardTitle>
+                            {project.title}
+                        </CardTitle>
                     </Link>
-                    }
                     <CardSubtitle>
                         {project.description}
                     </CardSubtitle>
                 </CardContent>
-                {project.id === "p4" ?
-                <div></div>
-                :
-                <Link href={`/project/${project.id}`}>
-                <a><span>{"View Project >"}</span></a>
-                </Link>
-                }
+                    <Link href={`/project/${project.id}`}>
+                    <a><span>{"View Project >"}</span></a>
+                    </Link>
             </Card>            
         ))}
         </CardGrid>
