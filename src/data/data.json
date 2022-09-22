@@ -38,7 +38,7 @@
         {
             "id": "p3",
             "title": "Wise Words",
-            "description": "A full-stack web app that randomly displays an ancient language quote based on user selection.",
+            "description": "A full-stack web app that displays an ancient language quote based on user selection.",
             "introText": "This project was inspired by my interest in ancient history and dead languages. The app generates a random ancient language quote that can then be translated into English. The frontend app fetches quotes from a simple backend API that I wrote using Node.js, Express, and MongoDB.",
             "purposeText": "I thought a quotes app was a great way to review my knowledge of working with plain JavaScript on the frontend. Also, instead of relying on a quotes API that had already been built, I decided to build my own in order to test my understanding of Node.js.  ",
             "stackText": "The frontend consists of HTML, CSS, and JavaScript. I decided to take a break from frameworks/libraries and focus on using plain JavaScript to manipulate the DOM. As for the backend, I used Node.js and Express to set up a server and connect to MongoDB Atlas. Express made the process of setting up a server pretty easy and allowed me to get the backend up and running relatively quickly.",
@@ -51,6 +51,23 @@
             "stack": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "REST API"],
             "github": "https://github.com/markjager13/wise-words-frontend",
             "demo": "https://wise-words-app.netlify.app/"
+        },
+        {
+            "id": "p4",
+            "title": "Employee Management App",
+            "description": "A full stack web application that lists employees and allows users to perform insert, update, and delete actions.",
+            "introText": "In progress",
+            "purposeText": "",
+            "stackText": "",
+            "problemsText": "",
+            "lessonsText": "",
+            "image": "/images/inprogress.png",
+            "detailsImage1": "",
+            "detailsImage2": "",
+            "detailsImageStack": "",
+            "stack": ["Java", "Spring Boot", "React", "Docker", "AWS", "Postgres", "GitHub Actions", "CI/CD", "JUnit", "REST API"],
+            "github": "https://github.com/markjager13/employee-management",
+            "demo": ""
         }
     ]
 }
