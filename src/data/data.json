@@ -64,10 +64,10 @@
             "image": "/images/inprogress.png",
             "detailsImage1": "",
             "detailsImage2": "",
-            "detailsImageStack": "",
+            "detailsImageStack": "/images/sb_r.png",
             "stack": ["Java", "Spring Boot", "React", "Docker", "AWS", "Postgres", "GitHub Actions", "CI/CD", "JUnit", "REST API"],
             "github": "https://github.com/markjager13/employee-management",
-            "demo": ""
+            "demo": "https://markjager.dev/project/p4"
         }
     ]
 }
