@@ -18,8 +18,9 @@ const Projects = ( {projects} ) => {
         <CardGrid>
         {projects.map(project => (
             <Card key={project.id}>
-                <CardImageContainer>
-                    <Link href={`/project/${project.id}`} passHref>
+                {project.id === "p4" ?
+                    <>
+                    <CardImageContainer>
                         <CardImage>
                             <Image 
                                 src={project.image}
@@ -30,21 +31,50 @@ const Projects = ( {projects} ) => {
                                 priority={true}
                             />
                         </CardImage>
-                    </Link>
-                </CardImageContainer>
-                <CardContent>
-                    <Link href={`/project/${project.id}`} passHref>
+                    </CardImageContainer>
+                    <CardContent>
                         <CardTitle>
                             {project.title}
                         </CardTitle>
+                        <CardSubtitle>
+                            {project.description}
+                        </CardSubtitle>
+                    </CardContent>
+                    <Link href={project.github}>
+                    <a target="_blank" rel="noopener noreferrer"><span>{"View GitHub >"}</span></a>
                     </Link>
-                    <CardSubtitle>
-                        {project.description}
-                    </CardSubtitle>
-                </CardContent>
+                    </>
+                :
+                    <>
+                    <CardImageContainer>
+                        <Link href={`/project/${project.id}`} passHref>
+                            <CardImage>
+                                <Image 
+                                    src={project.image}
+                                    alt="project image"
+                                    width={1688}
+                                    height={896}
+                                    layout="responsive"
+                                    priority={true}
+                                />
+                            </CardImage>
+                        </Link>
+                    </CardImageContainer>
+                    <CardContent>
+                        <Link href={`/project/${project.id}`} passHref>
+                            <CardTitle>
+                                {project.title}
+                            </CardTitle>
+                        </Link>
+                        <CardSubtitle>
+                            {project.description}
+                        </CardSubtitle>
+                    </CardContent>
                     <Link href={`/project/${project.id}`}>
                     <a><span>{"View Project >"}</span></a>
                     </Link>
+                </>
+                }
             </Card>            
         ))}
         </CardGrid>
