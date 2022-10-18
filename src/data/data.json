@@ -44,7 +44,7 @@
             "stackText": "The frontend consists of HTML, CSS, and JavaScript. I decided to take a break from frameworks/libraries and focus on using plain JavaScript to manipulate the DOM. As for the backend, I used Node.js and Express to set up a server and connect to MongoDB Atlas. Express made the process of setting up a server pretty easy and allowed me to get the backend up and running relatively quickly.",
             "problemsText": "While building this project I had to consider how each quote would be retrieved and displayed. Since the database was relatively small (124 total quotes), one approach would be to have the client fetch all quotes from the backend API on page load. I could then use Math.random to randomly select a quote to display. Alternatively, I could retrieve a single quote from the backend and DB for each request. I chose the latter option since fetching single quote per request was lighter and faster. I also chose this approach since I wanted to practice building several different routes on the backend (one for each language category).",
             "lessonsText": "Building this project was good practice and allowed me to review how data flows between client and server. It was also nice getting to work with a database. I've done some Java/MySQL work during school and have worked through some Node.js/MongoDB tutorials. However, I wanted to test my understanding of backend Node.js, Express, and MongoDB by building something myself.",
-            "image": "/images/wisewords/screentab.png",
+            "image": "/images/wisewords/screentab2.png",
             "detailsImage1": "",
             "detailsImage2": "",
             "detailsImageStack": "/images/node_logo.png",
