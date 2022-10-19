@@ -123,6 +123,7 @@ export const LeftContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2em;
 
     @media ${(props) => props.theme.breakpoints.md} {
         width: 55%;   
