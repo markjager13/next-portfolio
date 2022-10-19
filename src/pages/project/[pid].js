@@ -2,7 +2,6 @@ import fs from 'fs/promises';
 import path from 'path';
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
 import GlobalStyles from '../../styles/globals';
 import { Section, Title, ContentWrapper, ContentTable, ExternalLink, ImageContainer, ContentBlock, LeftContent, RightContent, ContentText, ContentTitle } from '../../components/Projects/ProjectDetailsPage.styled';
 import { Layout } from '../../layout/Layout';
@@ -45,14 +44,10 @@ const ProjectDetailsPage = (props) => {
             </tbody>
           </ContentTable>
           <ImageContainer>
-            <Image 
+            <img 
                   src={loadedProject.image}
                   className=""
                   alt="project image"
-                  width={1688}
-                  height={896}
-                  layout="responsive"
-                  priority="false"
               />
           </ImageContainer>
           <ContentText>
@@ -61,13 +56,9 @@ const ProjectDetailsPage = (props) => {
           </ContentText>
           <ContentBlock>
             <LeftContent>
-              <Image 
+              <img 
                     src={loadedProject.detailsImageStack}
                     alt="project image"
-                    width={150}
-                    height={150}
-                    layout="intrinsic"
-                    priority="false"
                   />
             </LeftContent>
             <RightContent>

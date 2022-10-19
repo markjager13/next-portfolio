@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Section, SectionTitle, SectionText } from '../../styles/GlobalComponents/index';
@@ -22,13 +21,9 @@ const Projects = ( {projects} ) => {
                     <>
                     <CardImageContainer>
                         <CardImage>
-                            <Image 
+                            <img 
                                 src={project.image}
                                 alt="project image"
-                                width={1688}
-                                height={896}
-                                layout="responsive"
-                                priority={true}
                             />
                         </CardImage>
                     </CardImageContainer>
@@ -49,13 +44,9 @@ const Projects = ( {projects} ) => {
                     <CardImageContainer>
                         <Link href={`/project/${project.id}`} passHref>
                             <CardImage>
-                                <Image 
+                                <img 
                                     src={project.image}
                                     alt="project image"
-                                    width={1688}
-                                    height={896}
-                                    layout="responsive"
-                                    priority={true}
                                 />
                             </CardImage>
                         </Link>
