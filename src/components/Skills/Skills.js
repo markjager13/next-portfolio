@@ -10,15 +10,17 @@ const Skills = () => {
           Since graduating, my focus has been on strengthening my computer science fundamentals and exploring full stack development concepts. Lately, most of my time has been dedicated to building projects using JavaScript, React, Java, and Spring-Boot. 
         </SectionText>
         <SkillsList>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git</li>
-            <li>Node.js</li>
-            <li>Express</li>
             <li>Java</li>
             <li>SQL</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Spring Boot</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Git</li>
+            <li>JUnit</li>
         </SkillsList>
     </Section>
   )
