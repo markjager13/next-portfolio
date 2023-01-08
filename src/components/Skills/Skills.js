@@ -7,20 +7,19 @@ const Skills = () => {
     <Section id="skills">
         <SectionTitle>My Skills</SectionTitle>
         <SectionText>
-          Since graduating, my focus has been on strengthening my computer science fundamentals and exploring full stack development concepts. Lately, most of my time has been dedicated to building projects using JavaScript, React, Java, and Spring-Boot. 
+          Since graduating, my focus has been on strengthening my computer science fundamentals and exploring full stack development concepts. Lately, most of my time has been dedicated to building projects using JavaScript and React. 
         </SectionText>
         <SkillsList>
+            <li>JavaScript</li>
+            <li>React</li>          
+            <li>Node.js</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>  
+            <li>Git</li>
             <li>Java</li>
             <li>SQL</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Spring Boot</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Git</li>
-            <li>JUnit</li>
         </SkillsList>
     </Section>
   )

@@ -13,7 +13,7 @@ const Hero = () => {
             </span>
         </HeroTitle>
         <HeroSubTitle>
-            <h3>Junior Software Developer</h3>
+            <h3>Software Developer</h3>
         </HeroSubTitle>
         <HeroText>
             A curiosity-driven developer with a passion for building efficient and intuitive software applications. 
