@@ -7,7 +7,7 @@ const Skills = () => {
     <Section id="skills">
         <SectionTitle>My Skills</SectionTitle>
         <SectionText>
-          Since graduating, my focus has been on strengthening my computer science fundamentals and exploring full stack development concepts. Lately, most of my time has been dedicated to building projects using JavaScript and React. 
+          Since graduating, my focus has been on strengthening my computer science fundamentals and exploring full stack development concepts. Lately, most of my time has been dedicated to building projects using JavaScript, React, Python, and PHP. 
         </SectionText>
         <SkillsList>
             <li>JavaScript</li>
